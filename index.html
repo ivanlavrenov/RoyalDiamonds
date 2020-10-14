@@ -2,257 +2,382 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="main.css">
     <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="select/css/select2.min.css" rel="stylesheet" />
+    <script src="select/js/select2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Royal Diamonds</title>
 </head>
 <body>
-<div class="first_level_title">
-    <div class="first_level_title_block">
-        <div class="city">ВАШ ГОРОД:<span class="title_span">МОСКВА</span><img src="./img/next.png" class="img_next">
-            <a class="title_entity">ЮРИДИЧЕСКИМ ЛИЦАМ</a>
-        </div>
-        <div class="switcher">
-            <div class="leng">ЯЗЫК: <a class="leng_text">RU</a> <a class="leng_text">EN</a></div>
-            <div class="currency">ВАЛЮТА: RUB <img src="./img/next.png" class="img_next"></div>
+<header>
+
+
+    <div class="first_level_title">
+        <div class="title_wrapper">
+            <div class="city">ВАШ ГОРОД:
+                <select class="js-select2" name="city" value="Выберите город">
+                    <option value=""></option>
+                    <option value="367" selected>Москва</option>
+                    <option value="340">Абакан</option>
+                    <option value="369">Абдулино</option>
+                    <option value="370">Абинск</option>
+                    <option value="371">Агидель</option>
+                </select>
+                <a class="title_entity">ЮРИДИЧЕСКИМ ЛИЦАМ</a>
+            </div>
+            <div class="switcher">
+                <div class="leng">ЯЗЫК: <a class="leng_text">RU</a> <a class="leng_text">EN</a></div>
+                <div class="currency">ВАЛЮТА:
+                    <select class="select" name="language">
+                        <option disabled>RUB</option>
+                        <option>RUB</option>
+                        <option>USD</option>
+                        <option>EUR</option>
+                        <option>HUF</option>
+                        <option>TRY</option>
+                        <option>SGD</option>
+                    </select>
+                    <img src="./img/next.png" class="img_next"></div>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="second_level_title">
-    <div class="second_level_block">
-        <a class="phone" href="tel:+7 (495) 740-87-75">
-            <img src="./img/phone.svg" class="img_phone">
-            <div class="phone_text"><span class="second_title_span">+7 (495) 740-87-75</span><br>обратный звонок</div>
-        </a>
-        <div class="logo">
-            <img src="./img/alrosa.svg" class="alrosa_img">
-            <p>официальный клиент</p>
-        </div>
-        <img src="./img/gershon.svg" class="gershon_img">
-        <div class="gemcenter_block">
-            <img src="./img/gemcenter.svg" class="gemcenter_img">
-            <div class="gemcenter_text"><span class="second_title_span">GEMCENTER</span><br>официальный партнер</div>
-        </div>
-        <div class="menu">
-            <img src="./img/search.png">
-            <img src="./img/person.png">
-            <img src="./img/select.png">
-            <img src="./img/chart.png">
-            <img src="./img/cart.png">
+    <div class="second_level_title">
+        <div class="title_wrapper">
+            <div class="second_level_title_item">
+                <a class="phone" href="tel:+7 (495) 740-87-75">
+                    <img src="./img/phone.svg" class="img_phone">
+                    <div class="phone_text"><span class="second_title_span">+7 (495) 740-87-75</span><br>обратный звонок
+                    </div>
+                </a>
+                <div class="logo">
+                    <a href="http://www.alrosa.ru/">
+                        <img src="./img/alrosa.svg" class="alrosa_img">официальный клиент
+                    </a>
+                </div>
+            </div>
+            <a href="" class="gershon_block"><img src="./img/gershon.svg" class="gershon_img"></a>
+            <div class="block" id="block1">
+                <a href="https://www.gem-center.ru/" class="gemcenter_block">
+                    <img src="./img/gemcenter.svg" class="gemcenter_img">
+                    <div class="gemcenter_text"><span class="second_title_span">GEMCENTER</span><br>официальный партнер
+                    </div>
+                </a>
+                <div class="menu">
+                    <svg class="btn btn1" data-num="1" width="100%"></svg>
+                    <svg class="person" width="100%"></svg>
+                    <svg class="select_img" width="100%"></svg>
+                    <svg class="chart" width="100%"></svg>
+                    <svg class="cart" width="100%"></svg>
+                </div>
+            </div>
+            <div class="block active" id="block2">
+                <div class="search_text_block search_field">
+                    <svg class="btn1" width="23px" height="23px"></svg>
+                    <input type="text" class="text_field" placeholder="Введите запрос для поиска">
+                </div>
+                <div class="search_text_block">
+                    <button class="search_button">НАЙТИ</button>
+                    <img src="./img/cross.png" class="btn btn2" data-num="2">
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="third_level_title">
-    <div class="third_level_block">
-        <div class="menu_item diamonds_menu">
-            БРИЛЛИАНТЫ<img class="menu_img diamonds_dropdown_img" src="./img/next.png">
-            <div class="diamonds_dropdown">
-                <div class="diamonds_dropdown_item">
-                    <p>По форме</p>
-                    <a><img src="./img/dropdown/Круг.png">Круг</a>
-                    <a class="marquise"><img src="./img/dropdown/Маркиз.png">Маркиз</a>
-                    <a class="cushion"><img src="./img/dropdown/Кушон.png">Кушон</a>
-                    <a class="oval"><img src="./img/dropdown/Овал.png">Овал</a>
-                    <a class="cushion"><img src="./img/dropdown/Принцесса.png">Принцесса</a>
-                    <a class="dropdown_arrow">Показать все <img src="./img/dropdown/purparrow.png"
-                                                                class="dropdown_arrow_img"></a>
-                </div>
-                <div class="diamonds_dropdown_item">
-                    <a class="pear"><img src="./img/dropdown/Груша.png">Груша</a>
-                    <a><img src="./img/dropdown/Ашер.png">Ашер</a>
-                    <a class="emerald"><img src="./img/dropdown/Изумруд.png">Изумруд</a>
-                    <a class=""><img src="./img/dropdown/Сердце.png">Сердце</a>
-                    <a class=""><img src="./img/dropdown/Радиант.png">Радиант</a>
-                </div>
-                <div class="diamonds_dropdown_item size">
-                    <p>По размеру</p>
-                    <a>0.3 карата</a>
-                    <a>0.4 карата</a>
-                    <a>0.5 карата</a>
-                    <a>0.6 карата</a>
-                    <a>0.7 катата</a>
-                </div>
-                <div class="diamonds_dropdown_item">
-                    <a>0.8 карата</a>
-                    <a>0.9 карата</a>
-                    <a>1 карат</a>
-                    <a>2 карата</a>
-                    <a>3 катата</a>
-                </div>
-                <img src="./img/dropdown/photo.png">
-            </div>
-        </div>
-        <div class="menu_item decoration">
-            ЮВЕЛИРНЫЕ УКРАШЕНИЯ<img class="menu_img decoration_arrow" src="./img/next.png">
-            <div class="decoration_dropdown">
-                <div>
-                    <p>По категории</p>
-                    <div class="decoration_dropdown_text">
-                        <div class="decoration_dropdown_list">
-                            <a>Кольца с бриллиантами</a>
-                            <a>Свадебные кольца</a>
-                            <a>Серьги с бриллиантами</a>
-                            <a>Браслеты с бриллиантами</a>
-                            <a>Подвески/кулоны с бриллиантами</a>
-                        </div>
-                        <div class="decoration_dropdown_list">
-                            <a>Касты</a>
-                            <a>Религиозные украшения</a>
-                            <a>Эксклюзив</a>
-                        </div>
+    <div class="third_level_title">
+        <div class="title_wrapper">
+            <div class="menu_item diamonds_menu">
+                БРИЛЛИАНТЫ<img class="menu_img diamonds_dropdown_img" src="./img/next.png">
+                <div class="diamonds_dropdown">
+                    <div class="diamonds_dropdown_item">
+                        <p>По форме</p>
+                        <a><img src="./img/dropdown/Круг.png">Круг</a>
+                        <a class="marquise"><img src="./img/dropdown/Маркиз.png">Маркиз</a>
+                        <a class="cushion"><img src="./img/dropdown/Кушон.png">Кушон</a>
+                        <a class="oval"><img src="./img/dropdown/Овал.png">Овал</a>
+                        <a class="cushion"><img src="./img/dropdown/Принцесса.png">Принцесса</a>
+                        <a class="dropdown_arrow">Показать все <img src="./img/dropdown/purparrow.png"
+                                                                    class="dropdown_arrow_img"></a>
                     </div>
-                    <a class="dropdown_arrow">Показать все <img src="./img/dropdown/purparrow.png"
-                                                                class="dropdown_arrow_img"></a>
-                </div>
-                <div class="decoration_img">
-                    <img src="./img/dropdown/photo_dec.png">
-                    <img src="./img/dropdown/photo_dec2.png">
-                </div>
-            </div>
-        </div>
-        <a class="menu_item">КОНСТРУКТОР УКРАШЕНИЙ</a>
-        <div class="menu_item services">
-            УСЛУГИ<img class="menu_img services_arrow" src="./img/next.png">
-            <div class="services_dropdown">
-                <div class="services_dropdown_text">
-                    <p>Услуги нашей компании</p>
-                    <div class="services_dropdown_list">
-                        <a>Огранка камней</a>
-                        <a>Изготовление украшения на заказ</a>
+                    <div class="diamonds_dropdown_item">
+                        <a class="pear"><img src="./img/dropdown/Груша.png">Груша</a>
+                        <a><img src="./img/dropdown/Ашер.png">Ашер</a>
+                        <a class="emerald"><img src="./img/dropdown/Изумруд.png">Изумруд</a>
+                        <a class=""><img src="./img/dropdown/Сердце.png">Сердце</a>
+                        <a class=""><img src="./img/dropdown/Радиант.png">Радиант</a>
                     </div>
-                </div>
-                <div>
-                    <img src="./img/dropdown/photo_services.png">
-                    <img class="services_img" src="./img/dropdown/photo_services2.png">
+                    <div class="diamonds_dropdown_item size">
+                        <p>По размеру</p>
+                        <a>0.3 карата</a>
+                        <a>0.4 карата</a>
+                        <a>0.5 карата</a>
+                        <a>0.6 карата</a>
+                        <a>0.7 катата</a>
+                    </div>
+                    <div class="diamonds_dropdown_item">
+                        <a>0.8 карата</a>
+                        <a>0.9 карата</a>
+                        <a>1 карат</a>
+                        <a>2 карата</a>
+                        <a>3 катата</a>
+                    </div>
+                    <img class="dropdown_photo" src="./img/dropdown/photo.png">
                 </div>
             </div>
-        </div>
-
-        <a class="menu_item">О НАС</a>
-        <a class="menu_item">ОПЛАТА И ДОСТАВКА</a>
-        <div class="menu_item info_menu">
-            ПОЛЕЗНАЯ ИНФОРМАЦИЯ<img class="menu_img info_dropdown_arrow" src="./img/next.png">
-            <div class="info_dropdown">
-                <div class="info_dropdown_text">
+            <div class="menu_item decoration">
+                ЮВЕЛИРНЫЕ УКРАШЕНИЯ<img class="menu_img decoration_arrow" src="./img/next.png">
+                <div class="decoration_dropdown">
                     <div>
-                        <p>Информация о компании</p>
-                        <a>Наши контакты</a>
-                        <a>Публичная оферта</a>
-                        <a>Политика конфиденциальности</a>
+                        <p>По категории</p>
+                        <div class="decoration_dropdown_text">
+                            <div class="decoration_dropdown_list">
+                                <a>Кольца с бриллиантами</a>
+                                <a>Свадебные кольца</a>
+                                <a>Серьги с бриллиантами</a>
+                                <a>Браслеты с бриллиантами</a>
+                                <a>Подвески/кулоны с бриллиантами</a>
+                                <a class="dropdown_arrow">Показать все <img src="./img/dropdown/purparrow.png"
+                                                                            class="dropdown_arrow_img"></a>
+                            </div>
+                            <div class="decoration_dropdown_list">
+                                <a>Касты</a>
+                                <a>Религиозные украшения</a>
+                                <a>Эксклюзив</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="decoration_img">
+                        <img class="dropdown_photo" src="./img/dropdown/photo_dec.png">
+                        <img class="dropdown_photo" src="./img/dropdown/photo_dec2.png">
+                    </div>
+                </div>
+            </div>
+            <a class="menu_item">КОНСТРУКТОР УКРАШЕНИЙ</a>
+            <div class="menu_item services">
+                УСЛУГИ<img class="menu_img services_arrow" src="./img/next.png">
+                <div class="services_dropdown">
+                    <div class="services_dropdown_text">
+                        <p>Услуги нашей компании</p>
+                        <div class="services_dropdown_list">
+                            <a>Огранка камней</a>
+                            <a>Изготовление украшения на заказ</a>
+                        </div>
                     </div>
                     <div>
-                        <p>Узнать больше</p>
-                        <a>Часто задаваемые вопросы</a>
-                        <a>Полезные статьи</a>
-                        <a>Новости</a>
+                        <img class="dropdown_photo" src="./img/dropdown/photo_services.png">
+                        <img class="services_img dropdown_photo" src="./img/dropdown/photo_services2.png">
                     </div>
                 </div>
-                <div>
-                    <img src="./img/dropdown/info.png">
-                    <img class="services_img" src="./img/dropdown/info2.png">
+            </div>
+            <a class="menu_item">О НАС</a>
+            <a class="menu_item">ОПЛАТА И ДОСТАВКА</a>
+            <div class="menu_item info_menu">
+                ПОЛЕЗНАЯ ИНФОРМАЦИЯ<img class="menu_img info_dropdown_arrow" src="./img/next.png">
+                <div class="info_dropdown">
+                    <div class="info_dropdown_text">
+                        <div>
+                            <p>Информация о компании</p>
+                            <a>Наши контакты</a>
+                            <a>Публичная оферта</a>
+                            <a>Политика конфиденциальности</a>
+                        </div>
+                        <div>
+                            <p>Узнать больше</p>
+                            <a>Часто задаваемые вопросы</a>
+                            <a>Полезные статьи</a>
+                            <a>Новости</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="dropdown_photo" src="./img/dropdown/info.png">
+                        <img class="services_img dropdown_photo" src="./img/dropdown/info2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <div class="your-class">
+        <div class="main_container">
+            <div class="banner_img_block">
+                <div class="main_text_container">
+                    <div class="main_text_block">
+                        <p class="main_title_text">Эксклюзивные ювелирные изделия<br>с <span class="main_span">бриллиантами</span>
+                        </p>
+                        <p class="main_text">Мы изготавливаем ювелирные изделия с бриллиантами любой сложности по Вашим
+                            или
+                            нашим
+                            эскизам в лучшем качестве в самые короткие сроки</p>
+                        <div class="video_play"><img src="./img/play.png">ВИДЕО О КОМПАНИИ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_container">
+            <div class="banner_img_block">
+                <div class="main_text_container">
+                    <div class="main_text_block">
+                        <p class="main_title_text">2222222222 2222222222222 изде22лия<br>с <span class="main_span">бриллиантами</span>
+                        </p>
+                        <p class="main_text">Мы изготавливаем ювелирные изделия с бриллиантами любой сложности по Вашим
+                            или
+                            нашим
+                            эскизам в лучшем качестве в самые короткие сроки</p>
+                        <div class="video_play"><img src="./img/play.png">ВИДЕО О КОМПАНИИ</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_container">
+            <div class="banner_img_block">
+                <div class="main_text_container">
+                    <div class="main_text_block">
+                        <p class="main_title_text">33333333333333 ювели3333рные 33333<br>с <span class="main_span">бриллиантами</span>
+                        </p>
+                        <p class="main_text">Мы изготавливаем ювелирные изделия с бриллиантами любой сложности по Вашим
+                            или
+                            нашим
+                            эскизам в лучшем качестве в самые короткие сроки</p>
+                        <div class="video_play"><img src="./img/play.png">ВИДЕО О КОМПАНИИ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="dots"></div>
+        <img src="./img/arrow.png" class="left_arrow prev">
+        <img src="./img/arrow_right.png" class="right_arrow next">
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="jewelry_container">
+        <h2 class="content_title">Украшения с бриллиантами</h2>
+        <div class="content">
+            <div class="jewelry_left">
+                <div class="jewelry">
+                    <div class="jewelry_item_container">
+
+                            <div class="jewelry_item">
+                                <div><img src="./img/rings.png"></div>
+                                <p class="jewelry_text">Кольца с бриллиантами</p>
+                            </div>
+                        
+                    </div>
+                    <div class="jewelry_item_container">
+                        <div class="jewelry_item">
+                            <div><img src="./img/pendants.png"></div>
+                            <p class="jewelry_text">Подвески с бриллиантами</p>
+                        </div>
+                    </div>
+                    <div class="jewelry_item_container">
+                        <div class="jewelry_item">
+                            <div><img src="./img/earrings.png"></div>
+                            <p class="jewelry_text">Серьги с бриллиантами</p>
+                        </div>
+                    </div>
+                    <div class="jewelry_item_container">
+                        <div class="jewelry_item">
+                            <div><img src="./img/bracelets.png"></div>
+                            <p class="jewelry_text">Браслеты с бриллиантами</p>
+                        </div>
+                    </div>
+                    <div class="jewelry_item_container">
+                        <div class="jewelry_item">
+                            <div><img src="./img/wedding%20rings.png"></div>
+                            <p class="jewelry_text">Свадебные кольца</p>
+                        </div>
+                    </div>
+                    <div class="jewelry_item_container">
+                        <div class="jewelry_item">
+                            <div><img src="./img/frame.png"></div>
+                            <p class="jewelry_text">Оправа для бриллианта</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jewelry_right">
+                <div class="top_jewelry_ring_container">
+                    <div class="first_ring_block">
+                        <p class="first_ring_text">КОЛЛЕКЦИЯ 2020</p>
+                        <p class="jewelry_item_text">Бриллианты<br>0.3 карата</p>
+                        <button class="jewelry_button"><span>ПОДРОБНЕЕ <img src="./img/arrow.png" class="jewelry_arrow">
+                        </span></button>
+                    </div>
+                </div>
+                <div class="bot_jewelry_ring_container">
+                    <div class="second_ring_block">
+                        <div><img src="./img/ring2.png" class="ring2"></div>
+                        <div>
+                            <p class="jewelry_ring_text1">При покупке бриллианта -</p>
+                            <p class="jewelry_ring_text2">оправа в подарок!</p>
+                            <button class="jewelry_second_button"><span>ПОДРОБНЕЕ <img src="./img/arrow.png"
+                                                                                       class="jewelry_arrow"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="main">
-    <img src="./img/banner.png" class="banner">
-    <div class="main_text_block">
-        <p class="main_title_text">Эксклюзивные ювелирные изделия<br>с <span class="main_span">бриллиантами</span>
-        </p>
-        <p class="main_text">Мы изготавливаем ювелирные изделия с бриллиантами любой сложности по Вашим или нашим
-            эскизам в лучшем качестве в самые короткие сроки</p>
-        <div class="video_play"><img src="./img/play.png">ВИДЕО О КОМПАНИИ</div>
-        <div class="slider">
-            <div>
-                <a class="slider_number">01</a>
-                <a class="slider_number">02</a>
-                <a class="slider_number">03</a>
+<div class="wrapper">
+    <div class="information_container">
+        <div class="info_text_company">
+            <div class="info_img1">
+                <img src="./img/photo1.png">
+                <p class="info_founder">ЭМИЛЬ ГЕРШОН - ОСНОВАТЕЛЬ</p>
             </div>
-            <img src="./img/arrow.png" class="left_arrow">
-            <img src="./img/arrow.png" class="right_arrow">
-        </div>
-    </div>
-</div>
-
-
-<div class="content_title_block"><p class="content_title">Украшения с бриллиантами</p></div>
-<div class="content_block">
-    <div class="jewelry">
-        <div>
-            <div class="jewelry_item">
-                <img src="./img/rings.png">
-                <p class="jewelry_text">Кольца с бриллиантами</p></div>
-            <div class="jewelry_item">
-                <img src="./img/pendants.png">
-                <p class="jewelry_text">Подвески с бриллиантами</p></div>
-            <div class="jewelry_item">
-                <img src="./img/earrings.png">
-                <p class="jewelry_text">Серьги с бриллиантами</p></div>
-        </div>
-        <div>
-            <div class="jewelry_item">
-                <img src="./img/bracelets.png">
-                <p class="jewelry_text">Браслеты с бриллиантами</p></div>
-            <div class="jewelry_item">
-                <img src="./img/wedding%20rings.png">
-                <p class="jewelry_text">Свадебные кольца</p></div>
-            <div class="jewelry_item">
-                <img src="./img/frame.png">
-                <p class="jewelry_text">Оправа для бриллианта</p></div>
-        </div>
-    </div>
-    <div class="jewelry_right">
-        <div class="first_ring_block">
-            <p class="first_ring_text">КОЛЛЕКЦИЯ 2020</p>
-            <img src="./img/ring.png" class="ring">
-            <p class="jewelry_item_text">Бриллианты<br>0.3 карата</p>
-            <div class="jewelry_button">ПОДРОБНЕЕ <img src="./img/arrow.png" class="jewelry_arrow"></div>
-        </div>
-        <div class="second_ring_block">
-            <img src="./img/ring2.png">
-            <div>
-                <p class="jewelry_ring_text1">При покупке бриллианта -</p>
-                <p class="jewelry_ring_text2">оправа в подарок!</p>
-                <div class="jewelry_second_button">ПОДРОБНЕЕ <img src="./img/arrow.png" class="jewelry_arrow"></div>
+            <div class="info_text_block2">
+                <h2>О компании</h2>
+                <p>OOO «Gershon» осуществляет оптовую и розничную продажу бриллиантов, сертифицированных в лабораториях
+                    Геммологического центра МГУ и GIA и др. Деятельность компании также включает в себя изготовление
+                    уникальных
+                    ювелирных изделий на заказ и торговлю украшениями с бриллиантами наивысших характеристик.</p>
+                <p class="info_main_text2">
+                    <span>Индивидуальный подход, гарантия качества, и долгосрочные отношения</span> –
+                    наша
+                    визитная
+                    карточка.</p>
+                <p>Сегодня OOO «Gershon» — команда персональных ювелирных консультантов. Мы оказываем содействие
+                    взыскательным
+                    клиентам в подборе дорогих ювелирных изделий. Время доказало верность выбранному подходу,
+                    направленному
+                    на
+                    максимальное удовлетворение клиентов, ценящих внимание, имеющих особые требования к комфорту,
+                    сервису и
+                    спокойствию, знающих ценность таких предметов роскоши, как эксклюзивные ювелирные украшения.</p>
             </div>
         </div>
     </div>
 </div>
-
-<div class="information">
-    <div>
-        <div class="info_img1">
-            <img src="./img/photo1.png">
-            <p class="info_founder">ЭМИЛЬ ГЕРШОН - ОСНОВАТЕЛЬ</p>
-        </div>
-        <h3>О компании</h3>
-        <p>OOO «Gershon» осуществляет оптовую и розничную продажу бриллиантов, сертифицированных в лабораториях
-            Геммологического центра МГУ и GIA и др. Деятельность компании также включает в себя изготовление уникальных
-            ювелирных изделий на заказ и торговлю украшениями с бриллиантами наивысших характеристик.</p>
-        <p class="info_main_text2">Индивидуальный подход, гарантия качества, и долгосрочные отношения – наша визитная
-            карточка.</p>
-        <p>Сегодня OOO «Gershon» — команда персональных ювелирных консультантов. Мы оказываем содействие взыскательным
-            клиентам в подборе дорогих ювелирных изделий. Время доказало верность выбранному подходу, направленному на
-            максимальное удовлетворение клиентов, ценящих внимание, имеющих особые требования к комфорту, сервису и
-            спокойствию, знающих ценность таких предметов роскоши, как эксклюзивные ювелирные украшения.</p>
-    </div>
+<div class="wrapper wrapper-left">
     <div class="info_text">
         <div class="info_text_block">
-            <h4>Несколько слов от основателя эксклюзивного бренда Gershon</h4>
-            <p class="info_main_text3">Я и мои ювелиры работаем в различных направлениях и стилях ювелирного искусства,
-                с использованием различных техник: от литья и ручной выпиловки, до применения горячих эмалей. Украшения
-                нашей компании разнообразны, но все отличает эксклюзивный дизайн и высочайшее качество исполнения.</p>
+            <h3>Несколько слов от основателя эксклюзивного бренда Gershon</h3>
+            <p class="info_main_text3">Я и мои ювелиры работаем в различных направлениях и стилях ювелирного
+                искусства,
+                с использованием различных техник: от литья и ручной выпиловки, до применения горячих эмалей.
+                Украшения
+                нашей компании разнообразны, но все отличает эксклюзивный дизайн и высочайшее качество
+                исполнения.</p>
             <p>Мне удалось собрать свою команду- коллектив который понимает, видит и воплощает мои идеи в жизнь.
                 Профессионалов я искал по всей России: сегодня у меня работает целый коллектив по созданию шедевров.
-                Также я поддерживаю и молодые таланты. Ювелиры , дизайнеры, мы все работаем, как один живой организм,
+                Также я поддерживаю и молодые таланты. Ювелиры , дизайнеры, мы все работаем, как один живой
+                организм,
                 создавая прекрасное…создавая ювелирные украшения «Gershon».</p>
-            <div class="info_button">О КОМПАНИИ <img src="./img/white arrow.png" class="white_arrow"></div>
+            <button class="info_button"><span>О КОМПАНИИ <img src="./img/white arrow.png" class="white_arrow"></span>
+            </button>
         </div>
-        <img src="./img/photo2.png" class="info_img2">
+        <div class="info_img_block"><img src="./img/photo2.png"></div>
     </div>
 </div>
 
@@ -359,8 +484,9 @@
         </div>
         <div class="footer_item">
             <a class="footer_phone before_item" href="tel:+7 (495) 740-87-75"><img src="./img/phone.png"
-                                                                                   class="footer_phone_img">+7(495)740-87-75</a>
-            <a class="footer_phone" href="tel:+7 (985) 762-77-272">+7(985)762-77-272</a>
+                                                                                   class="footer_phone_img">+7 (495)
+                740-87-75</a>
+            <a class="footer_phone" href="tel:+7 (985) 762-77-272">+7 (985) 762-77-272</a>
             <a class="footer_arrow">обратный звонок<img src="./img/grey arrow.png" class="grey_arrow"></a>
         </div>
         <div class="footer_item">
@@ -389,6 +515,8 @@
         <p><span class="footer_span">Разработка сайта: </span>Пластилин-Арт</p>
     </div>
 </footer>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="./script.js"></script>
 
 
 </body>
