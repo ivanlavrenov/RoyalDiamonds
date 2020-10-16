@@ -92,3 +92,20 @@ $(document).ready(function() {
         language: "ru"
     });
 });
+
+
+
+/* hamburger menu */
+
+$(function(){
+
+    $('.mobile_item').on('click', function() {
+        $('.hamburger_dropdown').slideToggle(300, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+
+    });
+
+});

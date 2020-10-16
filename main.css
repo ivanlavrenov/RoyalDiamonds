@@ -29,7 +29,6 @@
     font-weight: 400;
 }
 
-
 * {
     box-sizing: border-box;
     font-family: Golos;
@@ -55,11 +54,10 @@ header {
     width: 100%;
 }
 
-.js-select2{
+.js-select2 {
     max-width: 150px;
     width: 100%;
 }
-
 
 .first_level_title {
     background-color: #f7f7f7;
@@ -68,6 +66,10 @@ header {
     justify-content: center;
     font-size: 14px;
     color: #a9a9ab;
+}
+
+.mobile_title {
+    display: none;
 }
 
 .title_wrapper {
@@ -128,41 +130,38 @@ header {
     cursor: pointer;
 }
 
-.select2-container--default .select2-selection--single{
+.select2-container--default .select2-selection--single {
     border: none;
     background-color: #f7f7f7;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered{
+.select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #8c8c90;
     font-size: 14px;
     text-transform: uppercase;
 }
 
-.select2-dropdown{
+.select2-dropdown {
     background-color: #ded8db;
 }
 
-.select2-container--default .select2-search--dropdown .select2-search__field{
+.select2-container--default .select2-search--dropdown .select2-search__field {
     background-color: #f6f6f6;
     outline: none;
     border: none;
 }
 
-.select2-container--default .select2-results__option--selected{
+.select2-container--default .select2-results__option--selected {
     background-color: #aaa8a8;
 }
 
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     background-color: #8c8c90;
 }
-
 
 .select2 {
     width: 100px !important;
 }
-
-
 
 /*Search block*/
 
@@ -195,7 +194,7 @@ header {
     align-items: center;
 }
 
-.search_field{
+.search_field {
     padding-left: 60px;
 }
 
@@ -287,11 +286,9 @@ header {
     right: 9px;
     top: 9px;
     opacity: 0.6;
-
     -webkit-transition: all .27s ease-in-out;
     -o-transition: all .27s ease-in-out;
     transition: all .27s ease-in-out;
-
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -305,40 +302,39 @@ header {
     transform: rotate(180deg);
 }
 
-
 /*Dropdown menu*/
 
-.btn1{
+.btn1 {
     width: 23px;
     height: 23px;
     background-image: url("./img/search.svg");
 }
 
-.person{
+.person {
     width: 22px;
     height: 23px;
     background-image: url("./img/person.svg");
 }
 
-.select_img{
+.select_img {
     width: 22px;
     height: 22px;
     background-image: url("./img/select.svg");
 }
 
-.chart{
+.chart {
     width: 23px;
     height: 23px;
     background-image: url("./img/chart.svg");
 }
 
-.cart{
+.cart {
     width: 22px;
     height: 23px;
     background-image: url("./img/cart.svg");
 }
 
-.menu svg{
+.menu svg {
     cursor: pointer;
 }
 
@@ -413,6 +409,10 @@ header {
     justify-content: center;
 }
 
+.ru {
+    color: #b99a71;
+}
+
 .menu {
     width: 290px;
     display: flex;
@@ -451,6 +451,7 @@ header {
 
 .diamonds_menu:hover .diamonds_dropdown {
     opacity: 1;
+    visibility: visible;
     transition: 0.4s;
     z-index: 2;
 }
@@ -466,6 +467,7 @@ header {
 }
 
 .diamonds_dropdown {
+    visibility: hidden;
     cursor: default;
     opacity: 0;
     display: flex;
@@ -560,6 +562,7 @@ header {
 
 .decoration:hover .decoration_dropdown {
     opacity: 1;
+    visibility: visible;
     z-index: 2;
     transition: 0.4s;
 }
@@ -578,6 +581,7 @@ header {
 }
 
 .decoration_dropdown {
+    visibility: hidden;
     cursor: default;
     display: flex;
     opacity: 0;
@@ -626,6 +630,7 @@ header {
     cursor: default;
     display: flex;
     opacity: 0;
+    visibility: hidden;
     position: absolute;
     width: 100%;
     top: 100%;
@@ -639,6 +644,7 @@ header {
 
 .services:hover .services_dropdown {
     opacity: 1;
+    visibility: visible;
     z-index: 2;
     transition: 0.4s;
 }
@@ -686,6 +692,7 @@ header {
     cursor: default;
     display: flex;
     opacity: 0;
+    visibility: hidden;
     position: absolute;
     width: 100%;
     top: 100%;
@@ -699,6 +706,7 @@ header {
 
 .info_menu:hover .info_dropdown {
     opacity: 1;
+    visibility: visible;
     z-index: 2;
     transition: 0.4s;
 }
@@ -820,7 +828,7 @@ header {
     justify-content: flex-end;
 }
 
-.slider_number button{
+.slider_number button {
     padding: 0;
     border: none;
     font: inherit;
@@ -829,8 +837,8 @@ header {
     cursor: pointer;
 }
 
-.slider_number button:focus{
-    outline: 0 ;
+.slider_number button:focus {
+    outline: 0;
 }
 
 .slick-dots li button {
@@ -851,12 +859,11 @@ header {
     margin-left: 70px;
 }
 
-.left_arrow, .right_arrow{
+.left_arrow, .right_arrow {
     cursor: pointer;
     position: relative;
     top: 60px;
 }
-
 
 .wrapper {
     width: 100%;
@@ -913,6 +920,10 @@ header {
     height: 100%;
 }
 
+.first_ring_block:hover {
+    background-size: auto 110%;
+}
+
 .second_ring_block {
     background-color: #877080;
     display: flex;
@@ -922,8 +933,86 @@ header {
     height: 100%;
 }
 
-.jewelry_item_hover{
+.jewelry_item_hover_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32px 32px 32px;
 
+}
+
+.jewelry_item_hover_block p {
+    color: #5f5f62;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.jewelry_item_hover_block a {
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 29px;
+    font-size: 17px;
+}
+
+.jewelry_item_hover_block button span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #88657b;
+    color: #ffffff;
+}
+
+.jewelry_item_hover_block button {
+    padding: 1px;
+    border: 1px #88657b solid;
+}
+
+.jewelry_item_hover_block button span img {
+    margin: 0;
+}
+
+.jewelry_item_hover_block a:hover {
+    color: #c4aa8a;
+}
+
+.jewelry_item_more {
+    color: #7e6579 !important;
+    font-family: "PT Astra Serif";
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: 29px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.jewelry_item_hover {
+    width: 95.5%;
+    height: 65%;
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.jewelry_item:hover .jewelry_item_hover {
+    visibility: visible;
+    opacity: 1;
+    border: 1px solid #dbcdbb;
+    border-top: none;
+    transition: 0.4s;
+}
+
+.jewelry_item:hover {
+    border: 1px solid #dbcdbb;
+    border-bottom: none;
 }
 
 .jewelry_item {
@@ -935,7 +1024,8 @@ header {
     justify-content: flex-end;
     align-items: center;
     cursor: pointer;
-
+    border: 1px solid transparent;
+    border-bottom: none;
 }
 
 .jewelry_item_container {
@@ -948,7 +1038,7 @@ header {
     padding: 20px 10px 0;
 }
 
-.jewelry_item div{
+.jewelry_item_img {
     width: 100%;
 }
 
@@ -1049,7 +1139,6 @@ header {
     font-style: italic;
     color: #f1d19e;
 }
-
 
 .content_title {
     margin-bottom: 30px;
@@ -1206,7 +1295,7 @@ footer {
     border-top: #d2ccd1 1px solid;
 }
 
-.first_level_footer a{
+.first_level_footer a {
     color: #7e6579;
     font-size: 17px;
     font-weight: 500;
@@ -1238,7 +1327,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
 
 .grey_arrow {
@@ -1364,7 +1452,6 @@ footer {
     position: absolute;
     display: flex;
     width: 100%;
-    height: 664px;
     justify-content: space-around;
     align-items: flex-start;
     left: 0;
@@ -1403,329 +1490,1638 @@ footer {
 }
 
 .footer_dropdown div a {
-    color: #9a9a9e
+    color: #9a9a9e;
+    font-size: 13px !important;
+}
+
+.first_footer_arrow {
+    margin-top: 45px;
+}
+
+.footer_adaptive {
+    display: none;
+}
+
+.white_title_logo {
+    display: none;
+}
+
+.title_white_menu {
+    display: none;
+}
+
+.main_text_container_adaptive {
+    display: none;
+}
+
+.bot_jewelry_ring_adapt_container {
+    display: none;
+}
+
+.info_button_adaptive {
+    display: none;
 }
 
 @media only screen  and (max-width: 1650px) {
-   .main_text{
-       max-width: 650px;
-   }
+    .main_text {
+        max-width: 650px;
+    }
 
-    .main_title_text{
+    .main_title_text {
         font-size: 45px;
     }
 
-    .banner_img_block{
+    .banner_img_block {
         min-height: 700px;
     }
 
-    .top_jewelry_ring_container{
+    .top_jewelry_ring_container {
         height: 69.5%;
     }
 
-    .bot_jewelry_ring_container{
+    .bot_jewelry_ring_container {
         height: 30.5%;
+    }
+
+    .footer_dropdown div a {
+        font-size: 12px !important;
+    }
+
+    .jewelry_item_hover {
+        width: 95%;
+    }
+
+    .jewelry_text {
+        font-size: 26px;
     }
 }
 
-
-/* Large Devices, Wide Screens */
-
 @media only screen  and (max-width: 1415px) {
 
-    .phone_text, .gemcenter_text, .menu_item{
+    .phone_text, .gemcenter_text, .menu_item {
         font-size: 14px;
     }
 
-    .gemcenter_block{
+    .gemcenter_block {
         padding-left: 30px;
     }
 
-    .search_field{
+    .search_field {
         padding-left: 30px;
     }
 
-    .text_field{
+    .text_field {
         font-size: 15px;
     }
 
-    .search_button{
+    .search_button {
         font-size: 12px;
         height: 25px;
         width: 80px;
     }
 
-    .second_level_title_item{
+    .second_level_title_item {
         padding-right: 30px;
     }
 
-    .second_title_span{
+    .second_title_span {
         font-size: 16px;
     }
 
-    .gershon_img{
+    .gershon_img {
         max-width: 160px;
     }
 
-    .alrosa_img{
+    .alrosa_img {
         max-width: 140px;
     }
 
-    .logo a{
+    .logo a {
         font-size: 14px;
     }
 
-    .logo{
+    .logo {
         align-items: center;
         height: 35px;
     }
 
-    .gemcenter_text{
+    .gemcenter_text {
         font-size: 12px;
     }
 
-    .second_title_span{
+    .second_title_span {
         font-size: 14px;
     }
 
-    .diamonds_dropdown_item p, .decoration_dropdown div p, .services_dropdown_text p, .info_dropdown_text div p{
+    .diamonds_dropdown_item p, .decoration_dropdown div p, .services_dropdown_text p, .info_dropdown_text div p {
         font-size: 16px;
         margin-top: 10px;
     }
 
-    .info_dropdown_text div{
+    .info_dropdown_text div {
         margin-top: 0;
     }
 
-    .diamonds_dropdown_item, .decoration_dropdown_list{
+    .diamonds_dropdown_item, .decoration_dropdown_list {
         line-height: 30px;
     }
 
-    .diamonds_dropdown_item a, .decoration_dropdown_list a, .services_dropdown_list a, .info_dropdown_text div a{
+    .diamonds_dropdown_item a, .decoration_dropdown_list a, .services_dropdown_list a, .info_dropdown_text div a {
         font-size: 12px;
     }
 
-    .diamonds_dropdown_item a img{
+    .diamonds_dropdown_item a img {
         height: 27px;
     }
 
-    .dropdown_photo{
+    .dropdown_photo {
         height: 210px;
     }
 
-    .diamonds_dropdown_item .dropdown_arrow img{
+    .diamonds_dropdown_item .dropdown_arrow img {
         height: 18px !important;
     }
 
-    .dropdown_arrow{
+    .dropdown_arrow {
         font-size: 12px;
         margin-bottom: 10px;
     }
 
-    .dropdown_arrow_img{
+    .dropdown_arrow_img {
         height: 8px;
     }
 
-    .services_dropdown div p{
+    .services_dropdown div p {
         margin-top: 10px;
     }
 
-    .banner_img_block{
+    .banner_img_block {
         min-height: 650px;
     }
 
-    .main_title_text{
+    .main_title_text {
         font-size: 36px;
     }
 
-    .main_text{
+    .main_text {
         font-size: 15px;
     }
 
-    .video_play{
+    .video_play {
         max-width: 200px;
         font-size: 14px;
     }
 
-    .video_play img{
+    .video_play img {
         width: 40px;
     }
 
-    .menu{
+    .menu {
         width: 220px;
     }
 
-    .menu img{
+    .menu img {
         width: 20px;
     }
 
-    .jewelry_container{
+    .jewelry_container {
         margin-top: 0px;
     }
 
-    .jewelry_item div{
-
-    }
-
-    .jewelry_text{
+    .jewelry_text {
         font-size: 24px;
         max-width: 300px;
         padding-left: 0;
     }
 
-    .jewelry_item_text{
+    .jewelry_item_text {
         margin-bottom: 0;
         font-size: 30px;
     }
 
-    .jewelry_button{
+    .jewelry_button {
         margin-top: 30px;
+        margin-bottom: 120px;
     }
 
-    .jewelry_button span, .jewelry_second_button span, .info_button span{
+    .jewelry_button span, .jewelry_second_button span, .info_button span {
         font-size: 14px;
         width: 200px;
         height: 40px;
     }
 
-    .info_text_company, .info_text{
+    .jewelry_item_hover {
+        width: 94%;
+    }
+
+    .jewelry_item_hover p {
+        font-size: 14px;
+    }
+
+    .jewelry_item_hover a {
+        font-size: 14px;
+    }
+
+    .jewelry_item_hover_block button span {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .info_text_company, .info_text {
         align-items: center;
     }
 
-    .info_founder{
+    .info_founder {
         font-size: 14px;
         left: 100%;
         top: 15px;
     }
 
-    .info_text_block{
+    .info_text_block {
         padding-top: 0;
     }
 
-    .first_level_footer a, .second_level_footer{
+    .first_level_footer a, .second_level_footer {
         font-size: 14px;
     }
 
-   .content_title, h2{
-       font-size: 36px;
-       margin-top: 0;
-   }
+    .content_title, h2 {
+        font-size: 36px;
+        margin-top: 0;
+    }
 
-    .main_text_container{
+    .main_text_container {
         width: 600px;
     }
 
-   .info_text_block2, .info_text_block{
-       font-size: 14px;
-       max-width: 750px;
-   }
+    .info_text_block2, .info_text_block {
+        font-size: 14px;
+        max-width: 750px;
+    }
 
-   .first_level_footer{
-       height: 60px;
-   }
+    .first_level_footer {
+        height: 60px;
+    }
 
-   .footer_phone, .geo, .mail_text, .contacts{
-       font-size: 14px;
-   }
+    .footer_phone, .geo, .mail_text, .contacts {
+        font-size: 14px;
+    }
 
-    .second_level_footer{
+    .second_level_footer {
         height: 200px;
     }
 
-    .third_level_footer{
+    .third_level_footer {
         font-size: 12px;
         height: 38px;
     }
 
-    .footer_phone_img, .mail{
+    .footer_phone_img, .mail {
         width: 20px;
     }
 
-    .geo_img{
+    .geo_img {
         width: 13px;
     }
+
+    .footer_dropdown div a {
+        font-size: 10px !important;
+    }
+
+    .footer_dropdown div p {
+        font-size: 14px;
+    }
+
+    .footer_dropdown div {
+        line-height: 30px;
+    }
+
+    .footer_dropdown {
+        margin-bottom: 41px;
+    }
+
 }
 
 @media only screen  and (max-width: 1215px) {
-    .first_level_title{
-        font-size: 12px;
+    .first_level_title {
+        font-size: 10px;
         height: 30px;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__rendered{
-        font-size: 12px;
-    }
-
-    .gershon_img{
-        max-width: 120px;
-    }
-
-    .alrosa_img{
-        max-width: 120px;
-    }
-
-    .logo a{
-        font-size: 12px;
-    }
-
-
-    .banner_img_block{
-        min-height: 500px;
-    }
-
-    .main_title_text{
-        font-size: 30px;
-    }
-
-    .main_text{
-        font-size: 12px;
-    }
-
-    .menu_item{
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
         font-size: 10px;
     }
 
-    .menu_img{
+    .select2-container--default .select2-results > .select2-results__options {
+        font-size: 12px;
+    }
+
+    .second_level_title {
+        height: 70px;
+    }
+
+    .gershon_img {
+        max-width: 120px;
+    }
+
+    .alrosa_img {
+        max-width: 120px;
+    }
+
+    .gemcenter_block {
+        padding-left: 10px;
+    }
+
+    .second_level_title_item {
+        padding-right: 10px;
+    }
+
+    .third_level_title {
+        height: 30px;
+    }
+
+
+    .logo a {
+        font-size: 12px;
+    }
+
+    .switcher {
+        width: 220px;
+    }
+
+    .select2 {
+        width: 80px !important;
+    }
+
+    .banner_img_block {
+        min-height: 500px;
+    }
+
+    .main_title_text {
+        font-size: 30px;
+    }
+
+    .main_text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .menu_item {
+        font-size: 10px;
+    }
+
+    .menu_img {
         width: 5px;
         height: 4px;
         margin-left: 4px;
     }
 
-    .main_text_container{
+    .main_text_container {
         width: 500px;
     }
 
-    .video_play{
+    .video_play {
         font-size: 12px;
         max-width: 165px;
     }
 
-    .video_play img{
+    .video_play img {
         width: 30px;
     }
 
-    #slick-slide-control00::before, #slick-slide-control01::before, #slick-slide-control02::before{
+    #slick-slide-control00::before, #slick-slide-control01::before, #slick-slide-control02::before {
         font-size: 16px;
     }
 
-    .slick-dots li{
+    .slick-dots li {
         padding: 16px;
     }
 
-    .slick-arrow{
+    .slick-arrow {
         height: 7px;
     }
 
-    .right_arrow{
+    .right_arrow {
         margin-left: 45px;
     }
 
-    .left_arrow, .right_arrow{
+    .left_arrow, .right_arrow {
         top: 45px;
     }
 
-    .main_title_text{
+    .content_title {
+        font-size: 32px;
+    }
 
+    .jewelry_item_container {
+        max-height: 340px;
+    }
+
+    .jewelry_item_hover {
+        height: 75%;
+    }
+
+    .jewelry_item_hover button span {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .jewelry_item_hover p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .jewelry_item_hover a {
+        font-size: 10px;
+    }
+
+    .jewelry_item_more {
+        font-size: 12px;
+        margin: 7px;
+    }
+
+    .rings {
+        width: 120px;
+    }
+
+    .pendants {
+        width: 60px;
+    }
+
+    .earrings {
+        width: 140px;
+    }
+
+    .wedding {
+        width: 160px;
+    }
+
+    .frame {
+        width: 100px;
+    }
+
+    .jewelry_text {
+        font-size: 20px;
+    }
+
+    .first_ring_text {
+        font-size: 18px;
+        bottom: 80px;
+    }
+
+    .jewelry_button {
+        margin-bottom: 70px;
+    }
+
+    .jewelry_button span {
+        font-size: 12px;
+        width: 180px;
+        height: 30px;
+    }
+
+    .jewelry_item_hover {
+        width: 93%;
+    }
+
+    .first_ring_block {
+        background-size: auto 100%;
+    }
+
+    .jewelry_item_text {
+        font-size: 26px;
+    }
+
+    .second_ring_block div img {
+        max-width: 200px;
+    }
+
+    .second_ring_block {
+        font-size: 20px;
+    }
+
+    .jewelry_second_button span {
+        width: 180px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .information_container {
+        margin-top: 70px;
+    }
+
+    .info_text_block, .info_text_block2 {
+        max-width: 650px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .info_main_text2 {
+        margin: 15px 0 15px 0;
+    }
+
+    .info_founder {
+        top: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .info_button {
+        margin-top: 30px;
+    }
+
+    .info_button span {
+        width: 180px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .first_level_footer {
+        height: 40px;
+    }
+
+    .first_level_footer a {
+        font-size: 12px;
+    }
+
+    .footer_dropdown {
+        margin-bottom: 36px !important;
+    }
+
+    .footer_dropdown div a {
+        font-size: 8px !important;
+    }
+
+    .footer_dropdown div p {
+        font-size: 12px;
+    }
+
+    .footer_dropdown div {
+        line-height: 25px;
+    }
+
+    .footer_dropdown {
+        margin-bottom: 41px;
+    }
+
+    .footer_item a {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .second_level_footer {
+        height: 150px;
+    }
+
+    .footer_arrow {
+        margin-top: 10px;
+    }
+
+    .first_footer_arrow {
+        margin-top: 35px;
+    }
+
+    .logos {
+        width: 200px;
+    }
+
+    .facebook_img {
+        width: 9px !important;
+        height: 18.7px;
+    }
+
+    .logos a img {
+        width: 18px;
     }
 }
 
+@media only screen  and (max-width: 1024px) {
+
+    .first_level_title, .second_level_title, .third_level_title {
+        display: none;
+    }
+
+    .mobile_title {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        background-color: #f7f7f7;
+    }
+
+    .mobile_title_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .select {
+        max-width: 60px;
+    }
+
+    .img_next {
+        transform: rotate(270deg);
+    }
+
+    .img_arrow {
+        transform: rotate(270deg);
+        position: relative;
+        top: 2px;
+        left: 6px;
+        width: 6px;
+        height: 5px;
+    }
+
+    .adaptive_dropdown_item {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        background-color: #edebec;
+        margin: 3px -10px 3px -10px;
+        padding: 0 10px 0 10px;
+    }
+
+    .hamburger_dropdown {
+        display: none;
+        position: absolute;
+        background-color: #f7f7f7;
+        padding: 0 10px 0 10px;
+        font-size: 14px;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        margin: 0;
+        list-style-type: none;
+        border-bottom: 1px solid #cdcdcd;
+    }
+
+    .city, .leng, .currency, .title_entity_adaptive {
+        margin: 20px 0 20px 0;
+    }
+
+    .leng, .title_entity_adaptive {
+        height: 27px;
+        display: flex;
+        align-items: center;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 14px;
+    }
+
+    .title_entity {
+        margin: 0;
+    }
+
+    .mobile_item {
+        display: flex;
+        align-items: center;
+        width: 76px;
+        height: 100%;
+        justify-content: space-between;
+        color: #ba9b72;
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        position: relative;
+    }
+
+    .banner_img_block {
+        min-height: 385px;
+    }
+
+    .main_text {
+        font-size: 15px;
+    }
+
+    .video_play {
+        max-width: 220px;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+
+    .video_play img {
+        width: 40px;
+    }
+
+    .slider {
+        bottom: 100px;
+    }
+
+    .content_title {
+        font-size: 25px;
+    }
+
+    .jewelry_item_container {
+        max-height: 270px;
+    }
+
+    .jewelry_text {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .jewelry_item_hover {
+        width: 92%;
+    }
+
+    .jewelry_item_hover_block {
+        padding: 0 22px 22px 22px;
+    }
+
+    .jewelry_item_hover a {
+        line-height: 20px;
+    }
+
+    .rings {
+        width: 100px;
+    }
+
+    .pendants {
+        width: 50px;
+    }
+
+    .earrings {
+        width: 110px;
+    }
+
+    .wedding {
+        width: 120px;
+        padding-top: 15px;
+    }
+
+    .frame {
+        width: 80px;
+    }
+
+    .info_text_block2 {
+        max-width: 577px;
+    }
+
+    .info_text_block2 h2 {
+        font-size: 25px;
+    }
+
+    .info_img1 {
+        margin-right: 40px;
+    }
+
+    .info_text_block2 p {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .info_text_block p {
+        font-size: 15px;
+    }
+
+    .info_button span {
+        width: 256px;
+        height: 53px;
+        font-size: 16px;
+    }
+
+    .info_text_block {
+        max-width: 460px;
+    }
+
+    .first_level_footer {
+        height: 50px;
+    }
+
+    .footer_menu_item {
+        font-size: 15px;
+    }
+
+    .footer_dropdown_menu {
+        height: 60px;
+        padding-bottom: 23px;
+    }
+
+    .footer_dropdown {
+        display: none;
+    }
+
+    .second_level_footer {
+        height: 180px;
+        padding: 0 40px 0 40px;
+        justify-content: space-between;
+    }
+
+    .footer_connection {
+        display: none;
+    }
+
+    .footer_adaptive {
+        display: flex;
+    }
+
+    .second_level_adaptive_footer {
+        padding: 0 40px 0 40px;
+        height: 160px;
+    }
+
+    .footer_item a {
+        line-height: 34px;
+        font-size: 15px;
+    }
+
+    .logos_adaptive {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .adaptive_block {
+        margin-top: 10px;
+        max-width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .adaptive_block2 {
+        margin-top: 10px;
+        max-width: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .connect_item {
+        margin-left: 30px;
+    }
+
+    .third_level_footer {
+        justify-content: space-between;
+        padding: 0 30px 0 30px;
+        font-size: 15px;
+    }
+
+    .geo {
+        height: auto;
+        right: 20px;
+        padding-top: 0;
+    }
+
+    .geo_img {
+        top: 5px;
+    }
+
+    .first_footer_arrow {
+        margin-top: 45px;
+    }
+
+    .geo_block {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        max-width: 246px;
+    }
+
+    .adaptive_search_img {
+        display: none;
+    }
+}
+
+@media only screen  and (max-width: 790px) {
+    .banner_img_block {
+        min-height: 320px;
+    }
+
+    .main_title_text {
+        font-size: 22px;
+    }
+
+    .main_text {
+        font-size: 12px;
+    }
+
+    .video_play {
+        max-width: 165px;
+        font-size: 12px;
+    }
+
+    .video_play img {
+        width: 30px;
+    }
+
+    #slick-slide-control00::before, #slick-slide-control01::before, #slick-slide-control02::before {
+        font-size: 12px;
+    }
+
+    .main_text_container {
+        max-width: 400px;
+    }
+
+    .jewelry_item_container {
+        max-height: 240px;
+    }
+
+    .jewelry_text {
+        font-size: 16px;
+        padding: 0 10px 0 10px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .earrings {
+        width: 90px;
+    }
+
+    .first_ring_text {
+        font-size: 16px;
+        bottom: 40px;
+    }
+
+    .jewelry_item_text {
+        font-size: 20px;
+    }
+
+    .jewelry_button {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    .jewelry_arrow {
+        height: 7px;
+    }
+
+    .jewelry_button span {
+        width: 140px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .jewelry_second_button span {
+        width: 140px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .jewelry_second_button {
+        margin-top: 20px;
+    }
+
+    .jewelry_ring_text1, .jewelry_ring_text2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .second_ring_block div img {
+        max-width: 140px;
+    }
+
+    .jewelry_ring_text1 {
+        right: 20px;
+    }
+
+    .info_text_block2 {
+        max-width: 400px;
+    }
+
+    .info_text_block2 p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .info_founder {
+        font-size: 12px;
+    }
+
+    .information_container {
+        margin-top: 40px;
+    }
+
+    .info_text_block2 h2 {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .info_main_text2 {
+        margin: 10px 0 10px 0;
+    }
+
+    .info_text {
+        margin-top: 10px;
+        padding-left: 40px;
+        align-items: flex-start;
+    }
+
+    .info_main_text3 {
+        margin: 0 0 10px 0;
+    }
+
+    h3 {
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .info_text_block p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .info_button span {
+        width: 180px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .footer_item a {
+        font-size: 12px;
+        line-height: 20px;
+        margin: 6px 0 6px 0;
+    }
+
+    .geo_block {
+        margin-left: 0;
+        max-width: 220px;
+    }
+
+    .geo_arrow {
+        position: relative;
+        left: 20px;
+        top: 2px;
+        margin-bottom: 0 !important;
+    }
+
+    .grey_arrow {
+        height: 5px;
+    }
+
+    .geo_img {
+        width: 12px;
+        top: 0px;
+    }
+
+    .geo {
+        right: 0;
+        margin: 0 !important;
+    }
+
+    .footer_phone_img {
+        width: 18px;
+    }
+
+    .before_item {
+        right: 25px;
+    }
+
+    .footer_arrow {
+        font-size: 10px;
+        margin-top: 56px !important;
+    }
+
+    .footer_phone_item {
+        width: 160px;
+    }
+
+    .second_level_footer {
+        padding: 0 20px 0 20px;
+    }
+
+    .first_footer_arrow {
+        margin-bottom: 0 !important;
+    }
+
+    .adaptive_block {
+        width: 110px;
+    }
+
+    .second_level_adaptive_footer {
+        height: 120px;
+        padding: 0 20px 0 20px;
+    }
+
+    .second_level_footer {
+        height: 170px;
+    }
+
+    .mail_text {
+        padding-top: 0;
+    }
+
+    .third_level_footer {
+        font-size: 12px;
+    }
+
+    .logos_adaptive {
+        margin-top: 0;
+    }
+
+}
+
+@media only screen  and (max-width: 415px) {
+
+    .adaptive_title_img {
+        display: none;
+    }
+
+    .adaptive_search_img {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 33.3%;
+    }
+
+    .mobile_item {
+        justify-content: flex-start;
+        width: 33.3%;
+    }
+
+    .mobile_item p {
+        display: none;
+    }
+
+
+    .title_menu, .title_logo {
+        display: none;
+    }
+
+    .title_white_menu {
+        display: block;
+    }
+
+    .white_title_logo {
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .mobile_title_container {
+        background-color: #b99971;
+    }
+
+    .slick-dots{
+        width: 10%;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    .banner_img_block {
+        min-height: 309px;
+    }
+
+    .main_text_container {
+        display: none;
+    }
+
+    .main_text_container_adaptive {
+        display: block;
+    }
+
+    .slider {
+        bottom: 0;
+        margin-right: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider ul {
+        justify-content: flex-start;
+    }
+
+    .jewelry_container {
+        margin-top: 40px;
+    }
+
+    .main_text_block {
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    .main_title_text {
+        margin-bottom: 10px;
+    }
+
+    .left_arrow {
+        right: 10px;
+    }
+
+    .right_arrow {
+        margin-left: 30px;
+    }
+
+    .main_text {
+        font-size: 15px;
+    }
+
+    .video_play {
+        max-width: 100%;
+        justify-content: flex-start;
+        font-size: 16px;
+    }
+
+    .video_play img {
+        margin-right: 10px;
+        width: 40px
+    }
+
+    #slick-slide-control00::before, #slick-slide-control01::before, #slick-slide-control02::before {
+        font-size: 15px;
+    }
+
+    .content_title {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .jewelry_left {
+        width: 100%
+    }
+
+    .jewelry_text {
+        padding: 0 10px 0 10px;
+    }
+
+    .jewelry_item_container {
+        max-height: 240px;
+    }
+
+    .jewelry_right {
+        max-width: 100%;
+    }
+
+    .top_jewelry_ring_container {
+        height: 430px;
+    }
+
+    .first_ring_text {
+        font-size: 22px;
+        bottom: 15px;
+    }
+
+    .jewelry_item_text {
+        font-size: 22px;
+    }
+
+    .jewelry_button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .jewelry_arrow {
+        height: 9px;
+    }
+
+    .jewelry_button span {
+        width: 100%;
+        height: 58px;
+        font-size: 18px;
+    }
+
+    .bot_jewelry_ring_container {
+        height: 230px;
+        display: none;
+    }
+
+    .bot_jewelry_ring_adapt_container {
+        display: block;
+        height: 250px;
+    }
+
+    .second_ring_block_adapt {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+
+    .second_ring_block_adapt div p {
+        font-size: 18px;
+    }
+
+    .second_ring_block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jewelry_second_button {
+        width: 80%;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .jewelry_second_button span {
+        width: 100%;
+        height: 58px;
+        font-size: 18px;
+    }
+
+    .info_text_company {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .info_text_block2 h2 {
+        font-size: 24px;
+    }
+
+    .info_text_block2 p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .info_img1 {
+        margin-top: 20px;
+    }
+
+    .info_text_block {
+        padding-right: 30px;
+    }
+
+    .info_founder {
+        position: relative;
+        float: none;
+        writing-mode: horizontal-tb;
+        top: 0;
+        left: 15px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 23px;
+        letter-spacing: 2px;
+    }
+
+    .info_text {
+        flex-direction: column;
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+
+    .info_button {
+        display: none;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .info_text_block p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .info_text_block {
+        margin-bottom: 30px;
+    }
+
+    .info_button_adaptive {
+        display: block;
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .info_button_adaptive span {
+        width: 100%;
+        height: 53px;
+        font-size: 18px;
+    }
+
+    .first_level_footer {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0 15px 0;
+    }
+
+    .footer_dropdown_menu {
+        height: auto;
+        padding: 0;
+    }
+
+    .second_level_footer {
+        flex-direction: column;
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .footer_item {
+        align-items: center;
+    }
+
+    .footer_item a {
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .first_level_footer a {
+        font-size: 15px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 36px;
+    }
+
+    .footer_arrow {
+        margin-top: 0 !important;
+    }
+
+    .before_item {
+        right: 15px;
+    }
+
+    .footer_phone_item, .geo_block {
+        margin: 20px 0 20px 0;
+        max-width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        width: 100%;
+    }
+
+    .logos_adaptive {
+        flex-direction: column;
+    }
+
+    .second_level_adaptive_footer {
+        height: auto;
+    }
+
+    .connect_item, .adaptive_block2, .adaptive_block {
+        margin: 0;
+    }
+
+    .logos_adaptive div, .connect_item, .adaptive_block2 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .adaptive_block, .adaptive_block2 {
+        width: 160px;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+
+    .geo_img {
+        margin-right: 0;
+        left: 38px;
+    }
+
+    .adaptive_block2 {
+        width: 100px;
+    }
+
+    .connect_item {
+        margin-bottom: 10px;
+    }
+
+    .logos_adaptive div {
+        margin-top: 10px
+    }
+
+    .third_level_footer {
+        flex-direction: column;
+        height: 100px;
+        font-size: 17px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .third_level_footer p {
+        margin: 5px 0 5px 0;
+    }
+}
+
+@media only screen  and (max-width: 320px) {
+    .banner_img_block{
+        min-height: 200px;
+        position: relative;
+    }
+
+    .content_title{
+        margin-top: 80px;
+        font-size: 22px;
+        margin-bottom: 10px;
+        text-align: start;
+    }
+
+    .jewelry{
+        margin: -10px -5px 0;
+    }
+
+    .jewelry_item_container{
+        max-height: 155px;
+        padding: 10px 5px 0;
+    }
+
+    .rings{
+        width: 55px;
+    }
+
+    .pendants{
+        width: 28px;
+    }
+
+    .earrings{
+        width: 54px;
+    }
+
+    .bracelets{
+        width: 125px;
+    }
+
+    .wedding{
+        width: 66px;
+    }
+
+    .frame{
+        width: 48px;
+    }
+
+    .jewelry_text{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .top_jewelry_ring_container{
+        height: 330px;
+    }
+
+    .first_ring_text{
+        font-size: 16px;
+        bottom: 20px;
+    }
+
+    .jewelry_item_text{
+        font-size: 18px;
+    }
+
+    .jewelry_button{
+        margin-top: 15px;
+    }
+
+    .jewelry_button span{
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .second_ring_block div img{
+        max-width: 100px;
+    }
+
+    .second_ring_block_adapt div p{
+        font-size: 16px;
+    }
+
+    .jewelry_ring_text1{
+        right: 0px;
+        padding-top: 0;
+    }
+
+    .jewelry_ring_text2{
+        position: relative;
+        left: 10px;
+    }
+
+    .second_ring_block_adapt{
+        padding-top: 0;
+    }
+
+    .jewelry_second_button span{
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .jewelry_second_button{
+        margin-bottom: 0;
+    }
+
+    .bot_jewelry_ring_adapt_container{
+        height: 180px;
+    }
+
+    .third_level_footer{
+        font-size: 14px;
+    }
+}
