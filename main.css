@@ -35,6 +35,10 @@
     transition: 0.2s;
 }
 
+button{
+    outline: none;
+}
+
 body {
     margin: 0;
     width: 100%;
@@ -1518,6 +1522,10 @@ footer {
     display: none;
 }
 
+.dropdown_arrow_adapt{
+    display: none;
+}
+
 .info_button_adaptive {
     display: none;
 }
@@ -2126,6 +2134,12 @@ footer {
 
     .img_next {
         transform: rotate(270deg);
+        left: 10px;
+    }
+
+    .rub{
+        color: #c6ad8d;
+        margin-left: 4px;
     }
 
     .img_arrow {
@@ -2144,21 +2158,6 @@ footer {
         background-color: #edebec;
         margin: 3px -10px 3px -10px;
         padding: 0 10px 0 10px;
-    }
-
-    .hamburger_dropdown {
-        display: none;
-        position: absolute;
-        background-color: #f7f7f7;
-        padding: 0 10px 0 10px;
-        font-size: 14px;
-        width: 100%;
-        top: 100%;
-        left: 0;
-        z-index: 1;
-        margin: 0;
-        list-style-type: none;
-        border-bottom: 1px solid #cdcdcd;
     }
 
     .city, .leng, .currency, .title_entity_adaptive {
@@ -2395,6 +2394,161 @@ footer {
     .adaptive_search_img {
         display: none;
     }
+
+    .adaptive_title_img_block{
+        width: 34%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger_menu{
+        background-color: #b99a71;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px 0 10px;
+        margin: 0 -10px 0 -10px;
+        height: 40px;
+    }
+
+    .hamburger_dropdown {
+        display: none;
+        position: absolute;
+        background-color: #f7f7f7;
+        padding: 0 10px 0 10px;
+        font-size: 14px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        margin: 0;
+        list-style-type: none;
+        border-bottom: 1px solid #cdcdcd;
+    }
+
+    .title_dropdown{
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #ded8db;
+        width: 100%;
+        height: 93%;
+        z-index: 10;
+        padding: 0 10px 0 10px;
+    }
+
+    .dropdown_back{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        background-color: #f7f7f7;
+        margin: 0 -10px 0 -10px;
+        padding: 0 10px 0 10px;
+        color: #b99a71;
+    }
+
+    .city_text{
+        display: flex;
+        flex-direction: column;
+        padding: 29px 0 0 6px;
+        line-height: 38px;
+    }
+
+    .city_text input{
+        width: 100%;
+        height: 36px;
+        padding-left: 10px;
+        font-size: 17px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        background-color: #f6f6f6;
+        border: none;
+        outline: none;
+        margin-bottom: 10px;
+    }
+
+    .dropdown_img{
+        transform: rotate(90deg);
+        padding-right: 6px;
+        top: 4px;
+        position: relative;
+    }
+
+    .currency_text{
+        display: flex;
+        max-width: 300px;
+        justify-content: space-between;
+        padding: 29px 0 0 6px;
+    }
+
+    .currency_text div{
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 36px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #95657d;
+        max-width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .diamonds_text{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .diamonds_mobile_dropdown, .decoration_mobile_dropdown, .services_mobile_dropdown, .information_mobile_dropdown{
+        background-color: #f7f7f7;
+    }
+
+    .diamonds_dropdown_back, .decoration_dropdown_back, .services_dropdown_back, .information_dropdown_back{
+        background-color: #edebec;
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 25px;
+        color: #5f5f62;
+    }
+
+    .decoration_dropdown_block{
+        max-width: 300px;
+        padding: 29px 0 0 6px;
+    }
+
+    .decoration_dropdown_text{
+        width: 400px;
+        justify-content: space-between;
+    }
+
+    .services_dropdown_block, .info_dropdown_text{
+        padding: 29px 0 0 6px;
+    }
+
+    .services_dropdown_block p{
+        padding-bottom: 10px;
+        color: #88657b;
+        font-size: 17px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 27px;
+    }
+
+    .decoration_dropdown_block p{
+        color: #88657b;
+        font-size: 17px;
+        font-weight: 500;
+    }
 }
 
 @media only screen  and (max-width: 790px) {
@@ -2627,6 +2781,54 @@ footer {
 
 @media only screen  and (max-width: 415px) {
 
+    .dropdown_arrow{
+        display: none !important;
+    }
+
+    .dropdown_arrow_adapt{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .diamonds_text{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .diamonds_dropdown_item{
+        width: 40%;
+        line-height: 34px;
+    }
+
+    .decoration_dropdown_text{
+        flex-direction: column;
+    }
+
+    .decoration_dropdown_list_bot{
+        margin-top: 0;
+    }
+
+    .info_dropdown_text{
+        flex-direction: column;
+    }
+
+    .currency_text{
+        max-width: 170px;
+    }
+
+    .title_dropdown{
+        height: 100%;
+    }
+
+    .diamonds_dropdown_item_left{
+        position: relative;
+        top: 25px;
+    }
+
+    .size{
+        bottom: 0px;
+    }
+
     .adaptive_title_img {
         display: none;
     }
@@ -2647,6 +2849,13 @@ footer {
         display: none;
     }
 
+    .adaptive_title_img_block{
+        justify-content: flex-end;
+    }
+
+    .hamburger_menu{
+        padding: 0 15px 0 15px;
+    }
 
     .title_menu, .title_logo {
         display: none;
@@ -2765,10 +2974,6 @@ footer {
         max-width: 100%;
     }
 
-    .jewelry_item_hover{
-        width: 90.5%;
-    }
-
     .top_jewelry_ring_container {
         height: 430px;
     }
@@ -2797,17 +3002,12 @@ footer {
         font-size: 18px;
     }
 
-    .jewelry_item_hover a{
-        line-height: 16px;
+    .jewelry_item:hover{
+        border: 1px #b99a71 solid
     }
 
-    .jewelry_item_hover p{
-        line-height: 16px;
-        font-size: 10px;
-    }
-
-    .jewelry_item_hover_block {
-        padding: 0 10px 10px 10px;
+    .jewelry_item_hover {
+        display: none;
     }
 
     .bot_jewelry_ring_container {

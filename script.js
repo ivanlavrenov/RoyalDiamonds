@@ -98,14 +98,124 @@ $(document).ready(function() {
 /* hamburger menu */
 
 $(function(){
-
     $('.mobile_item').on('click', function() {
         $('.hamburger_dropdown').slideToggle(300, function(){
             if( $(this).css('display') === "none"){
                 $(this).removeAttr('style');
             }
         });
-
+    });
+    $('.exit').on('click', function() {
+        $('.hamburger_dropdown').slideToggle(300, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
     });
 
 });
+
+$(function(){
+    $('.currency').on('click', function() {
+        $('.currency_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+    $('.currency_dropdown_back').on('click', function() {
+        $('.currency_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+});
+
+$(function(){
+    $('.city').on('click', function() {
+        $('.city_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+    $('.city_dropdown_back').on('click', function() {
+        $('.city_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+});
+
+$(function(){
+    $('.diamonds_link').on('click', function() {
+        $('.diamonds_mobile_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+    $('.diamonds_dropdown_back').on('click', function() {
+        $('.diamonds_mobile_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+});
+
+$(function(){
+    $('.decoration_link').on('click', function() {
+        $('.decoration_mobile_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+    $('.decoration_dropdown_back').on('click', function() {
+        $('.decoration_mobile_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+});
+
+$(function(){
+    $('.services_link').on('click', function() {
+        $('.services_mobile_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+    $('.services_dropdown_back').on('click', function() {
+        $('.services_mobile_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+});
+
+$(function(){
+    $('.information_link').on('click', function() {
+        $('.information_mobile_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+    $('.information_dropdown_back').on('click', function() {
+        $('.information_mobile_dropdown').slideToggle(100, function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr('style');
+            }
+        });
+    });
+});
+
+
+
