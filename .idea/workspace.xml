@@ -33,9 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -83,7 +83,9 @@
       <workItem from="1602684458796" duration="1672000" />
       <workItem from="1602741690972" duration="22557000" />
       <workItem from="1602828364721" duration="18799000" />
-      <workItem from="1603087688507" duration="12574000" />
+      <workItem from="1603087688507" duration="21506000" />
+      <workItem from="1603173610385" duration="25074000" />
+      <workItem from="1603260134222" duration="1252000" />
     </task>
     <servers />
   </component>
@@ -107,13 +109,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="538" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602587735412" />
-    <state x="497" y="326" key="run.anything.popup" timestamp="1602247343720">
+    <state x="497" y="326" key="run.anything.popup" timestamp="1603182099889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="497" y="326" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602247343720" />
-    <state x="749" y="361" width="670" height="58" key="search.everywhere.popup" timestamp="1603101280998">
+    <state x="497" y="326" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603182099889" />
+    <state x="749" y="361" width="672" height="160" key="search.everywhere.popup" timestamp="1603182357173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="749" y="361" width="670" height="58" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603101280998" />
+    <state x="749" y="361" width="672" height="160" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603182357173" />
   </component>
 </project>

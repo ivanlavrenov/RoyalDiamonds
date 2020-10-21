@@ -35,7 +35,7 @@
     transition: 0.2s;
 }
 
-button{
+button, input {
     outline: none;
 }
 
@@ -1403,6 +1403,10 @@ footer {
     margin-right: 7px;
 }
 
+.geo_arrow {
+    margin-top: 45px;
+}
+
 .mail_text {
     color: #93856f;
     font-size: 17px;
@@ -1522,7 +1526,7 @@ footer {
     display: none;
 }
 
-.dropdown_arrow_adapt{
+.dropdown_arrow_adapt {
     display: none;
 }
 
@@ -1790,6 +1794,10 @@ footer {
 
     .geo_img {
         width: 13px;
+    }
+
+    .geo_arrow {
+        margin-top: 30px;
     }
 
     .footer_dropdown div a {
@@ -2114,6 +2122,40 @@ footer {
         display: none;
     }
 
+    .search_title_block, .search_title_block div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0 15px 0 15px;
+    }
+
+    .search_title_block input {
+        width: 85%;
+        background-color: #b99a71;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff;
+    }
+
+    .search_title_block input::placeholder {
+        color: #ffffff;
+    }
+
+    .search_back {
+        padding-left: 20px;
+    }
+
+    .search_title {
+        display: none;
+        position: absolute;
+        height: 40px;
+        width: 100%;
+        top: 0;
+        background-color: #b99a71;
+    }
+
     .mobile_title {
         display: flex;
         height: 40px;
@@ -2137,7 +2179,7 @@ footer {
         left: 10px;
     }
 
-    .rub{
+    .rub {
         color: #c6ad8d;
         margin-left: 4px;
     }
@@ -2240,6 +2282,14 @@ footer {
 
     .jewelry_item_hover a {
         line-height: 20px;
+    }
+
+    .jewelry_item:hover {
+        border: 1px #b99a71 solid
+    }
+
+    .jewelry_item_hover {
+        display: none;
     }
 
     .rings {
@@ -2395,13 +2445,13 @@ footer {
         display: none;
     }
 
-    .adaptive_title_img_block{
+    .adaptive_title_img_block {
         width: 34%;
         display: flex;
         justify-content: space-between;
     }
 
-    .hamburger_menu{
+    .hamburger_menu {
         background-color: #b99a71;
         display: flex;
         align-items: center;
@@ -2426,7 +2476,7 @@ footer {
         border-bottom: 1px solid #cdcdcd;
     }
 
-    .title_dropdown{
+    .title_dropdown {
         display: none;
         position: absolute;
         top: 40px;
@@ -2438,7 +2488,7 @@ footer {
         padding: 0 10px 0 10px;
     }
 
-    .dropdown_back{
+    .dropdown_back {
         display: flex;
         align-items: center;
         height: 40px;
@@ -2448,14 +2498,14 @@ footer {
         color: #b99a71;
     }
 
-    .city_text{
+    .city_text {
         display: flex;
         flex-direction: column;
         padding: 29px 0 0 6px;
         line-height: 38px;
     }
 
-    .city_text input{
+    .city_text input {
         width: 100%;
         height: 36px;
         padding-left: 10px;
@@ -2471,21 +2521,21 @@ footer {
         margin-bottom: 10px;
     }
 
-    .dropdown_img{
+    .dropdown_img {
         transform: rotate(90deg);
         padding-right: 6px;
         top: 4px;
         position: relative;
     }
 
-    .currency_text{
+    .currency_text {
         display: flex;
         max-width: 300px;
         justify-content: space-between;
         padding: 29px 0 0 6px;
     }
 
-    .currency_text div{
+    .currency_text div {
         font-size: 15px;
         font-weight: 400;
         font-style: normal;
@@ -2499,18 +2549,18 @@ footer {
         flex-direction: column;
     }
 
-    .diamonds_text{
+    .diamonds_text {
         width: 70%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .diamonds_mobile_dropdown, .decoration_mobile_dropdown, .services_mobile_dropdown, .information_mobile_dropdown{
+    .diamonds_mobile_dropdown, .decoration_mobile_dropdown, .services_mobile_dropdown, .information_mobile_dropdown {
         background-color: #f7f7f7;
     }
 
-    .diamonds_dropdown_back, .decoration_dropdown_back, .services_dropdown_back, .information_dropdown_back{
+    .diamonds_dropdown_back, .decoration_dropdown_back, .services_dropdown_back, .information_dropdown_back {
         background-color: #edebec;
         font-size: 15px;
         font-weight: 400;
@@ -2520,21 +2570,21 @@ footer {
         color: #5f5f62;
     }
 
-    .decoration_dropdown_block{
+    .decoration_dropdown_block {
         max-width: 300px;
         padding: 29px 0 0 6px;
     }
 
-    .decoration_dropdown_text{
+    .decoration_dropdown_text {
         width: 400px;
         justify-content: space-between;
     }
 
-    .services_dropdown_block, .info_dropdown_text{
+    .services_dropdown_block, .info_dropdown_text {
         padding: 29px 0 0 6px;
     }
 
-    .services_dropdown_block p{
+    .services_dropdown_block p {
         padding-bottom: 10px;
         color: #88657b;
         font-size: 17px;
@@ -2544,7 +2594,7 @@ footer {
         line-height: 27px;
     }
 
-    .decoration_dropdown_block p{
+    .decoration_dropdown_block p {
         color: #88657b;
         font-size: 17px;
         font-weight: 500;
@@ -2781,51 +2831,51 @@ footer {
 
 @media only screen  and (max-width: 415px) {
 
-    .dropdown_arrow{
+    .dropdown_arrow {
         display: none !important;
     }
 
-    .dropdown_arrow_adapt{
+    .dropdown_arrow_adapt {
         display: block;
         margin-top: 20px;
     }
 
-    .diamonds_text{
+    .diamonds_text {
         width: 100%;
         flex-wrap: wrap;
     }
 
-    .diamonds_dropdown_item{
+    .diamonds_dropdown_item {
         width: 40%;
         line-height: 34px;
     }
 
-    .decoration_dropdown_text{
+    .decoration_dropdown_text {
         flex-direction: column;
     }
 
-    .decoration_dropdown_list_bot{
+    .decoration_dropdown_list_bot {
         margin-top: 0;
     }
 
-    .info_dropdown_text{
+    .info_dropdown_text {
         flex-direction: column;
     }
 
-    .currency_text{
+    .currency_text {
         max-width: 170px;
     }
 
-    .title_dropdown{
+    .title_dropdown {
         height: 100%;
     }
 
-    .diamonds_dropdown_item_left{
+    .diamonds_dropdown_item_left {
         position: relative;
         top: 25px;
     }
 
-    .size{
+    .size {
         bottom: 0px;
     }
 
@@ -2849,11 +2899,11 @@ footer {
         display: none;
     }
 
-    .adaptive_title_img_block{
+    .adaptive_title_img_block {
         justify-content: flex-end;
     }
 
-    .hamburger_menu{
+    .hamburger_menu {
         padding: 0 15px 0 15px;
     }
 
@@ -2877,7 +2927,7 @@ footer {
         background-color: #b99971;
     }
 
-    .slick-dots{
+    .slick-dots {
         width: 10%;
     }
 
@@ -3002,7 +3052,7 @@ footer {
         font-size: 18px;
     }
 
-    .jewelry_item:hover{
+    .jewelry_item:hover {
         border: 1px #b99a71 solid
     }
 
@@ -3231,118 +3281,598 @@ footer {
 }
 
 @media only screen  and (max-width: 320px) {
-    .banner_img_block{
+    .banner_img_block {
         min-height: 200px;
         position: relative;
     }
 
-    .content_title{
+    .content_title {
         margin-top: 80px;
         font-size: 22px;
         margin-bottom: 10px;
         text-align: start;
     }
 
-    .jewelry{
+    .jewelry {
         margin: -10px -5px 0;
     }
 
-    .jewelry_item_hover{
+    .jewelry_item_hover {
         width: 93%;
     }
 
-    .jewelry_item_container{
+    .jewelry_item_container {
         max-height: 155px;
         padding: 10px 5px 0;
     }
 
-    .rings{
+    .rings {
         width: 55px;
     }
 
-    .pendants{
+    .pendants {
         width: 28px;
     }
 
-    .earrings{
+    .earrings {
         width: 54px;
     }
 
-    .bracelets{
+    .bracelets {
         width: 125px;
     }
 
-    .wedding{
+    .wedding {
         width: 66px;
     }
 
-    .frame{
+    .frame {
         width: 48px;
     }
 
-    .jewelry_text{
+    .jewelry_text {
         margin-top: 5px;
         margin-bottom: 5px;
     }
 
-    .top_jewelry_ring_container{
+    .top_jewelry_ring_container {
         height: 330px;
     }
 
-    .first_ring_text{
+    .first_ring_text {
         font-size: 16px;
         bottom: 20px;
     }
 
-    .jewelry_item_text{
+    .jewelry_item_text {
         font-size: 18px;
     }
 
-    .jewelry_button{
+    .jewelry_button {
         margin-top: 15px;
     }
 
-    .jewelry_button span{
+    .jewelry_button span {
         height: 40px;
         font-size: 15px;
     }
 
-    .second_ring_block div img{
+    .second_ring_block div img {
         max-width: 100px;
     }
 
-    .second_ring_block_adapt div p{
+    .second_ring_block_adapt div p {
         font-size: 16px;
     }
 
-    .jewelry_ring_text1{
+    .jewelry_ring_text1 {
         right: 0px;
         padding-top: 0;
     }
 
-    .jewelry_ring_text2{
+    .jewelry_ring_text2 {
         position: relative;
         left: 10px;
     }
 
-    .second_ring_block_adapt{
+    .second_ring_block_adapt {
         padding-top: 0;
     }
 
-    .jewelry_second_button span{
+    .jewelry_second_button span {
         height: 40px;
         font-size: 15px;
     }
 
-    .jewelry_second_button{
+    .jewelry_second_button {
         margin-bottom: 0;
     }
 
-    .bot_jewelry_ring_adapt_container{
+    .bot_jewelry_ring_adapt_container {
         height: 180px;
     }
 
-    .third_level_footer{
+    .third_level_footer {
         font-size: 14px;
     }
+}
+
+
+/*  Конструктор украшений  */
+
+.constructor_banner {
+    background-image: url("img/constructor/banner.png");
+    width: 100%;
+    min-height: 280px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right center;
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+
+.constructor_banner_text {
+    width: 700px;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.constructor_banner_text h2 {
+    position: relative;
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 10%;
+    font-size: 46px;
+}
+
+.constructor_left_block {
+    max-width: 395px;
+    background-color: #f7f7f7;
+    padding: 31px;
+}
+
+.character {
+    color: #7e6579;
+    font-family: "PT Astra Serif";
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.constructor_left_block_header {
+    color: #28272f;
+    font-family: "PT Astra Serif";
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.constructor_left_block_content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.constructor_left_block_content div {
+    display: flex;
+    flex-direction: column;
+}
+
+.constructor_left_first_item {
+    padding-bottom: 40px;
+}
+
+.constructor_left_block_content hr {
+    writing-mode: vertical-lr;
+    width: 2px;
+    height: 5%;
+    margin-left: 30px;
+}
+
+.constructor_left_block_line {
+    position: relative;
+    margin: 30px 0 30px 0;
+}
+
+.constructor_item_product_name {
+    color: #7e6579;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+}
+
+.constructor_item_price {
+    color: #af9872;
+    font-family: "PT Astra Serif";
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.constructor_left_block_description {
+    font-family: "PT Astra Serif";
+    font-style: italic;
+    color: #88657b;
+    letter-spacing: normal;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+.constructor_left_block_total {
+    flex-direction: row !important;
+}
+
+.constructor_left_block_content_container {
+    width: 100%;
+}
+
+.constructor_left_block_delete {
+    margin-top: 30px;
+    text-align: center;
+    color: #7e6579;
+    font-family: "PT Astra Serif";
+    font-size: 19px;
+    font-style: italic;
+}
+
+.constructor_left_block button {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    padding: 1px;
+    border: 1px #88657b solid;
+    margin-top: 30px;
+}
+
+.constructor_left_block button span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    background-color: #88657b;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.constructor_left_ring {
+    background-color: #7e6579;
+    max-width: 395px;
+    margin-top: 30px;
+    padding: 40px;
+    color: #ffffff;
+}
+
+.constructor_left_ring_img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.constructor_left_ring p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.constructor_left_ring_text {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.constructor_left_ring_text span {
+    font-style: italic;
+    color: #e9c198;
+}
+
+.constructor_left_ring button{
+    width: 70%;
+    text-align: center;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background-color: #7e6579;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.constructor_left_ring button span{
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #96775f;
+}
+
+.button_block{
+    display: flex;
+    justify-content: center;
+}
+
+.constructor_main_block{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: -20px -10px 0;
+}
+
+.constructor_left_block_main{
+    width: 25%;
+    padding: 20px 10px 0;
+}
+
+.constructor_right_block_container{
+    width: 75%;
+    padding: 20px 10px 0;
+}
+
+.constructor_right_block_steps_item{
+    background-color: #f7f7f7;
+    max-width: 395px;
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 30px 30px;
+    width: 100%;
+    position: relative;
+}
+
+.constructor_right_block_steps{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #b99971 1px solid;
+}
+
+.constructor_right_block_steps_text{
+    display: flex;
+}
+
+.constructor_right_block_steps_text2{
+    color: #b99971;
+    font-family: "PT Astra Serif";
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: 40px;
+}
+
+.constructor_right_block_steps_text1{
+    color: #28272f;
+    font-family: "PT Astra Serif";
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+
+.constructor_left_block_main{
+    margin-bottom: 100px;
+}
+
+.checkbox{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    top: 10px;
+    right: 10px;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70% 50%;
+    cursor: pointer;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox:checked+label::before {
+    border-color: #b99971;
+    background-color: #b99971;
+    background-image: url("img/constructor/checkbox.png");
+}
+
+.last_step_item{
+    height: 127px;
+    color: #ffffff;
+    background-color: #b99971;
+    font-family: "PT Astra Serif";
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.constructor_slider{
+    width: 45%;
+    text-align: center;
+}
+
+.constructor_slider_img{
+    width: 100%;
+}
+
+.constructor_right_block_total{
+    width: 45%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+}
+
+.constructor_right_block_main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.constructor_right_block_total h3{
+    color: #4e3f4b;
+    font-family: "PT Astra Serif";
+    font-size: 34px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 40px 30px 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.constructor_right_block_total p{
+    padding: 0 30px;
+    line-height: 40px;
+    color: #8c8c90;
+    font-family: "PT Astra Serif";
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: normal;
+}
+
+.constructor_total_price{
+    color: #af9872 !important;
+    font-size: 22px !important;
+    margin-bottom: 40px;
+}
+
+.constructor_right_block_total a {
+    padding: 10px 30px;
+    margin: 6px 0;
+    background-color: #ded8db;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.constructor_right_block_total a img{
+    position: relative;
+    left: 5px;
+    top: 1px;
+}
+
+.constructor_right_block_total hr{
+    height: 1px;
+    width: 100%;
+    color: #ded8db;
+    margin: 20px 0;
+}
+
+.constructor_total_button1, .constructor_total_button2{
+    width: 60%;
+    height: 50px;
+    margin-left: 30px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.constructor_total_button1 span, .constructor_total_button2 span{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.constructor_total_button1{
+    border: 1px #b99971 solid;
+    margin-bottom: 20px;
+}
+
+.constructor_total_button2{
+    border: 1px #88657b solid;
+    margin-bottom: 30px;
+}
+
+.constructor_total_button1 span{
+    background-color: #b99971;
+}
+
+.constructor_total_button2 span{
+    background-color: #88657b;
+}
+
+.constructor_next1, .constructor_next2{
+    transform: rotate(0deg);
+}
+
+.transform{
+    transform: rotate(180deg);
+}
+
+.constructor_dropdown1{
+    display: none;
+}
+
+.constructor_dropdown_block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.constructor_dropdown1 div{
+    padding: 10px 0 10px 0;
+}
+
+.constructor_dropdown1 div p, .constructor_dropdown2 div p{
+    display: flex;
+    align-items: center;
+    color: #88657b !important;
+    font-family: "Golos" !important;
+    font-style: normal !important;
+}
+
+.constructor_dropdown_text{
+    font-size: 15px !important;
+    cursor: pointer;
+}
+
+.constructor_dropdown_text:hover{
+    color: #b99971 !important;
+}
+
+.constructor_dropdown1 div p img{
+    margin-right: 4px;
+}
+
+.constructor_dropdown2{
+    display: none;
+}
+
+.constructor_dropdown2 hr{
+    margin: 25px 0 25px 0;
+}
+
+.constructor_dropdown2 img{
+    transform: rotate(180deg);
+    margin-left: 4px;
+}
+
+.constructor_dropdown1 hr{
+    margin-bottom: 0;
 }
