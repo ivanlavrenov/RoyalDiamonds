@@ -21,8 +21,24 @@
   <component name="ChangeListManager">
     <list default="true" id="723c8c9b-5246-40ad-95a8-fca569856cb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constructor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/phone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/select/css/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/select/css/select2.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/config.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/slick/slick-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/slick-theme.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/slick-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/slick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/slick.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/slick.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +78,11 @@
       <recent name="C:\Users\Silen\Royal Diamonds" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="{" />
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -84,7 +105,75 @@
       <workItem from="1602828364721" duration="18799000" />
       <workItem from="1603087688507" duration="21506000" />
       <workItem from="1603173610385" duration="25074000" />
-      <workItem from="1603260134222" duration="1664000" />
+      <workItem from="1603260134222" duration="22155000" />
+      <workItem from="1603346495713" duration="26698000" />
+      <workItem from="1603432647774" duration="19325000" />
+      <workItem from="1603692311445" duration="37312000" />
+      <workItem from="1603778137175" duration="22487000" />
+      <workItem from="1603806480979" duration="4078000" />
+      <workItem from="1603864918375" duration="10303000" />
+      <workItem from="1603879759056" duration="5509000" />
+      <workItem from="1603886533082" duration="10484000" />
+      <workItem from="1603952311730" duration="6285000" />
+      <workItem from="1603959997433" duration="12137000" />
+      <workItem from="1603975749911" duration="3100000" />
+      <workItem from="1603979591460" duration="3563000" />
+      <workItem from="1604050487132" duration="6334000" />
+      <workItem from="1604058122985" duration="10639000" />
+      <workItem from="1604298961756" duration="4027000" />
+      <workItem from="1604303716052" duration="144000" />
+      <workItem from="1604304914516" duration="6319000" />
+      <workItem from="1604315773713" duration="4929000" />
+      <workItem from="1604321653218" duration="4271000" />
+      <workItem from="1604326561949" duration="1716000" />
+      <workItem from="1604383186464" duration="9640000" />
+      <workItem from="1604394203767" duration="579000" />
+      <workItem from="1604395124273" duration="613000" />
+      <workItem from="1604402392658" duration="2752000" />
+      <workItem from="1604406989620" duration="2025000" />
+      <workItem from="1604556645746" duration="11171000" />
+      <workItem from="1604574956974" duration="7943000" />
+      <workItem from="1604643231095" duration="10998000" />
+      <workItem from="1604662483738" duration="2594000" />
+      <workItem from="1604666936924" duration="6858000" />
+      <workItem from="1604902984488" duration="22957000" />
+      <workItem from="1604933453443" duration="71000" />
+      <workItem from="1604988345707" duration="20843000" />
+      <workItem from="1605082287582" duration="14898000" />
+      <workItem from="1605112577386" duration="2265000" />
+      <workItem from="1605161210492" duration="24916000" />
+      <workItem from="1605248933347" duration="18412000" />
+      <workItem from="1605508880176" duration="21307000" />
+      <workItem from="1605593554414" duration="12317000" />
+      <workItem from="1605688103875" duration="14102000" />
+      <workItem from="1605765616837" duration="19496000" />
+      <workItem from="1605852729595" duration="20384000" />
+      <workItem from="1606111699042" duration="20805000" />
+      <workItem from="1606200959269" duration="18074000" />
+      <workItem from="1606320160725" duration="3004000" />
+      <workItem from="1606384649426" duration="1678000" />
+      <workItem from="1606458702714" duration="20841000" />
+      <workItem from="1606547465304" duration="14401000" />
+      <workItem from="1606653623160" duration="3404000" />
+      <workItem from="1606720434041" duration="20411000" />
+      <workItem from="1606803606951" duration="23199000" />
+      <workItem from="1606890513177" duration="5781000" />
+      <workItem from="1606906975751" duration="14019000" />
+      <workItem from="1606979040053" duration="19330000" />
+      <workItem from="1607063207802" duration="15594000" />
+      <workItem from="1607322431717" duration="17462000" />
+      <workItem from="1607410890507" duration="22056000" />
+      <workItem from="1607494101052" duration="23546000" />
+      <workItem from="1607583536386" duration="22129000" />
+      <workItem from="1607665995370" duration="20352000" />
+      <workItem from="1607932395876" duration="16640000" />
+      <workItem from="1607961151649" duration="2608000" />
+      <workItem from="1608013219427" duration="14555000" />
+      <workItem from="1608101317055" duration="9188000" />
+      <workItem from="1608187281165" duration="12052000" />
+      <workItem from="1608276053506" duration="2304000" />
+      <workItem from="1608366311081" duration="599000" />
+      <workItem from="1608532472092" duration="14605000" />
     </task>
     <servers />
   </component>
@@ -104,17 +193,41 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="516" y="284" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603796847273">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="516" y="284" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603796847273" />
+    <state x="566" y="195" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605269859363">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="566" y="195" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605269859363" />
     <state x="738" y="538" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602587735412">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="538" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602587735412" />
-    <state x="497" y="326" key="run.anything.popup" timestamp="1603182099889">
+    <state x="497" y="326" key="run.anything.popup" timestamp="1608536826716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="497" y="326" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603182099889" />
-    <state x="749" y="361" width="672" height="160" key="search.everywhere.popup" timestamp="1603182357173">
+    <state x="497" y="326" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608536826716" />
+    <state x="749" y="361" width="672" height="160" key="search.everywhere.popup" timestamp="1608126618469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="749" y="361" width="672" height="160" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603182357173" />
+    <state x="749" y="361" width="672" height="160" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608126618469" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/RoyalDiamondsMVP/script.js</url>
+          <line>963</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/calendar/jquery.daterangepicker.min.js</url>
+          <line>458</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
