@@ -208,6 +208,13 @@ $(document).ready(function () {
         });
     });
 
+    $('.catalog_item_svg').on('click', function () {
+        $(this).toggleClass("active")
+    })
+
+    $('.catalog_item_svg_select').on('click', function () {
+        $(this).toggleClass("active")
+    })
 
     /* hamburger menu */
 
@@ -587,6 +594,20 @@ $(document).ready(function () {
     });
 
     $(function () {
+        $('.catalog_sorting_list_title').on('click', function () {
+            $('.catalog_sorting_list_container').fadeIn(0, function () {
+                if ($(this).css('display') === "none") {
+                    $(this).removeAttr('style');
+                }
+                $('.catalog_sorting_list_item').on('click', function () {
+                    $('.catalog_sorting_list_container').fadeOut(0)
+                })
+            });
+        });
+    });
+
+
+    $(function () {
         $('.card_description_item_first').on('click', function () {
             $('.card_description_item_first_text').slideToggle(300, function () {
                 if ($(this).css('display') === "none") {
@@ -709,8 +730,8 @@ $(document).ready(function () {
 
 
     $(function () {
-        $('.constructor_right_block_steps_item').on('click', function () {
-            $('.constructor_right_block_steps_dropdown_list_container').slideToggle(300, function () {
+        $('.constructor_dropdown_title').on('click', function () {
+            $('.constructor_dropdown_list').slideToggle(300, function () {
                 if ($(this).css('display') === "none") {
                     $(this).removeAttr('style');
                 }
@@ -749,10 +770,10 @@ $(document).ready(function () {
     var $navRange = $('.js-range');
 
     $navRange.each(function () {
-        var min = parseInt($(this).data('minValue') || 0),
-            max = parseInt($(this).data('maxValue') || 1000),
-            currentMin = parseInt($(this).data('currentMinValue') || 0),
-            currentMax = parseInt($(this).data('currentMaxValue') || 0),
+        var min = parseFloat($(this).data('minValue') || 0),
+            max = parseFloat($(this).data('maxValue') || 1000),
+            currentMin = parseFloat($(this).data('currentMinValue') || 0),
+            currentMax = parseFloat($(this).data('currentMaxValue') || 0),
             $inputMin = $(this).find('.range-widget-min'),
             $inputMax = $(this).find('.range-widget-max'),
             $slider = $(this).find('.range-widget__slider');
@@ -769,16 +790,19 @@ $(document).ready(function () {
                 range: {
                     'min': min,
                     'max': max
-                }
+                },
             });
-
             keypressSlider.noUiSlider.on('update', function (values, handle) {
-                inputs[handle].value = parseInt(values[handle]);
-            });
+                if ($slider.hasClass('slider-price')) {
+                    inputs[0].value = "от: " + parseInt(values[0]) + " ₽";
+                    inputs[1].value = "до: " + parseInt(values[1]) + " ₽";
+                } else {
+                    inputs[0].value = "от: " + parseFloat(values[0]) + " карат";
+                    inputs[1].value = "до: " + parseFloat(values[1]) + " карат";
+                }
+            })
         }
     });
-
-
     /* constructor steps */
     /*
             (function (query) {
@@ -794,7 +818,6 @@ $(document).ready(function () {
                     }.bind(a, index));
                 });
             })('.constructor_right_block_steps_item');
-
 
     */
 
@@ -817,6 +840,15 @@ $(document).ready(function () {
         appendDots: $('.dots'),
         prevArrow: $('.prev'),
         nextArrow: $('.next')
+    });
+
+    $('.static_slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        appendDots: $('.dots'),
+        prevArrow: $('.static_prev'),
+        nextArrow: $('.static_next')
     });
 
     $('.static_slider_adaptive').slick({
@@ -1021,17 +1053,17 @@ $(document).ready(function () {
         }
     });
 
-});
+    $("body").on("click", "[data-calendar-open]", function (e) {
+        if ($(this).parents(".calendarParent").find("[data-calendar-input]").change) {
+            $(this).parents(".personalInputBox").find(".customLabel").addClass("hide");
+            $(this).parents(".personalInputBox").find(".customInput-text").addClass("show");
+        }
 
-$("body").on("click", "[data-calendar-open]", function(e){
-    if ($(this).parents(".calendarParent").find("[data-calendar-input]").change) {
-        $(this).parents(".personalInputBox").find(".customLabel").addClass("hide");
-        $(this).parents(".personalInputBox").find(".customInput-text").addClass("show");
-    }
+        /* $("[data-calendar-open]").on("change", function() {
+               $(this).parents(".calendarParent").find(".calendarParent-main").removeClass("__open");
+         })*/
 
-   /* $("[data-calendar-open]").on("change", function() {
-          $(this).parents(".calendarParent").find(".calendarParent-main").removeClass("__open");
-    })*/
+    });
 
-});
+})
 

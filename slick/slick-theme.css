@@ -142,42 +142,17 @@
     cursor: pointer;
 }
 
-#slick-slide-control00::before{
+#slick-slide-control00::before,#slick-slide-control10::before, #slick-slide-control30::before, #slick-slide-control20::before{
     content: "01";
 }
 
-#slick-slide-control01::before{
+#slick-slide-control01::before, #slick-slide-control31::before, #slick-slide-control11::before, #slick-slide-control21::before{
     content: "02";
 }
 
-#slick-slide-control02::before{
+#slick-slide-control02::before, #slick-slide-control32::before, #slick-slide-control12::before, #slick-slide-control22::before{
     content: "03";
 }
-
-#slick-slide-control10::before{
-    content: "01";
-}
-
-#slick-slide-control11::before{
-    content: "02";
-}
-
-#slick-slide-control12::before{
-    content: "03";
-}
-
-#slick-slide-control20::before{
-    content: "01";
-}
-
-#slick-slide-control21::before{
-    content: "02";
-}
-
-#slick-slide-control22::before{
-    content: "03";
-}
-
 
 .slick-dots li button {
     font-size: 0;

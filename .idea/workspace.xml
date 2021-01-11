@@ -21,24 +21,54 @@
   <component name="ChangeListManager">
     <list default="true" id="723c8c9b-5246-40ad-95a8-fca569856cb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constructor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/phone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_pages.html" beforeDir="false" afterPath="$PROJECT_DIR$/all_pages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article_and_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/article_and_news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card_diamonds.html" beforeDir="false" afterPath="$PROJECT_DIR$/card_diamonds.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card_jewelry.html" beforeDir="false" afterPath="$PROJECT_DIR$/card_jewelry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog_jewelry.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog_jewelry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog_jewelry_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog_jewelry_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constructor_first_step.html" beforeDir="false" afterPath="$PROJECT_DIR$/constructor_first_step.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constructor_first_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/constructor_first_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constructor_second_step.html" beforeDir="false" afterPath="$PROJECT_DIR$/constructor_second_step.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constructor_second_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/constructor_second_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constructor_third_step.html" beforeDir="false" afterPath="$PROJECT_DIR$/constructor_third_step.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empty_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/empty_cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_compare.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_data_fl.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_data_fl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_data_url.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_data_url.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_history.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_jewelry.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_jewelry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_orders_in_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_orders_in_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_profiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_profiles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_profiles_fL.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_profiles_fL.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_profiles_urL.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_profiles_urL.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk_select.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk_select.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_first_step.html" beforeDir="false" afterPath="$PROJECT_DIR$/order_first_step.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_last_step.html" beforeDir="false" afterPath="$PROJECT_DIR$/order_last_step.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_second_step.html" beforeDir="false" afterPath="$PROJECT_DIR$/order_second_step.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_third_step.html" beforeDir="false" afterPath="$PROJECT_DIR$/order_third_step.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_third_step_ur.html" beforeDir="false" afterPath="$PROJECT_DIR$/order_third_step_ur.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/select/css/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/select/css/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/config.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services_faceting.html" beforeDir="false" afterPath="$PROJECT_DIR$/services_faceting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/services_order.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slick/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/slick/slick-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick-theme.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick-theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slick/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/slick/slick.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_about.html" beforeDir="false" afterPath="$PROJECT_DIR$/static_about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_confidentiality.html" beforeDir="false" afterPath="$PROJECT_DIR$/static_confidentiality.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/static_contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_offer.html" beforeDir="false" afterPath="$PROJECT_DIR$/static_offer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_questions.html" beforeDir="false" afterPath="$PROJECT_DIR$/static_questions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_ur.html" beforeDir="false" afterPath="$PROJECT_DIR$/static_ur.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +79,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -174,6 +204,20 @@
       <workItem from="1608276053506" duration="2304000" />
       <workItem from="1608366311081" duration="599000" />
       <workItem from="1608532472092" duration="14605000" />
+      <workItem from="1608622873542" duration="11567000" />
+      <workItem from="1608710607644" duration="9305000" />
+      <workItem from="1608791303984" duration="13038000" />
+      <workItem from="1608806419204" duration="5978000" />
+      <workItem from="1608818821632" duration="1499000" />
+      <workItem from="1608878848661" duration="5692000" />
+      <workItem from="1608895207081" duration="10684000" />
+      <workItem from="1609066222143" duration="3646000" />
+      <workItem from="1609073264897" duration="864000" />
+      <workItem from="1609138535735" duration="13569000" />
+      <workItem from="1609231650212" duration="5726000" />
+      <workItem from="1609311808149" duration="4607000" />
+      <workItem from="1609761088431" duration="4152000" />
+      <workItem from="1609831053885" duration="1081000" />
     </task>
     <servers />
   </component>
@@ -205,14 +249,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="538" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602587735412" />
-    <state x="497" y="326" key="run.anything.popup" timestamp="1608536826716">
+    <state x="497" y="326" width="672" height="677" key="run.anything.popup" timestamp="1608903800992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="497" y="326" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608536826716" />
-    <state x="749" y="361" width="672" height="160" key="search.everywhere.popup" timestamp="1608126618469">
+    <state x="497" y="326" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608903800992" />
+    <state x="749" y="361" width="672" height="160" key="search.everywhere.popup" timestamp="1609776630875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="749" y="361" width="672" height="160" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608126618469" />
+    <state x="749" y="361" width="672" height="160" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609776630875" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
